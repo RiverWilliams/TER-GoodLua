@@ -1,0 +1,98 @@
+\documentclass[12pt,francais]{report}
+
+\usepackage[UTF8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage[french]{babel}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+\includegraphics[scale=0.3]{./images/logo_universite_orleans.png}~\\[1.5cm]
+
+\textsc{\large Master 1 - TER}\\[1cm]	
+
+\rule{\linewidth}{0.5mm}\\[0.4cm]
+
+{ \LARGE \bfseries GoodLua\\[0.4cm] }
+
+\rule{\linewidth}{0.5mm}\\[2cm]
+\end{center}
+
+
+\begin{minipage}{0.4\textwidth}
+      \begin{flushleft}
+			\textsc{Bovie} Pierre-Edouard\\
+			\textsc{Labourbe} Loïc\\
+			\textsc{Maslowski} Antoine\\
+			\textsc{Roche} Julie\\
+			\end{flushleft}
+    \end{minipage}\hfill
+    \begin{minipage}{0.6\textwidth}
+      \begin{flushright}
+			Enseignants : \textsc{Couvreur} Jean-Michel\\
+			\textsc{Dabrowski} Frederic\\
+
+\end{flushright}
+    \end{minipage}\\[1.5cm]
+		
+		\begin{center}
+    {7 Février 2018 - 25 Mai 2018}
+		\end{center}
+
+\chapter*{Besoins fonctionnels}
+
+\begin{itemize}[label=\textbullet]
+	\item \textbf{exécuter du code}
+	\begin{description}
+		\item \textit{description :} exécuter du code eLua sur le PcDuino
+		\item \textit{priorité :} très haute
+		\item \textit{justification :} cette fonctionnalité est la principale. Nous devons être en mesure de faire fonctionner le robot grâce à du code eLua avant toute autre chose.
+	\end{description}
+	\item \textbf{connecter android au robot grâce au wifi}
+	\begin{description}
+		\item \textit{description :} utiliser la carte wifi du PcDuino pour la connecter à un appareil androïd.
+		\item \textit{priorité :} haute
+		\item \textit{justification :} le code crée via l'application androïd doit être transmis au robot pour être exécuté. Une solution filaire étant peu pratique, nous le connecterons via wifi.
+	\end{description}
+	\item \textbf{transformer blockly en eLua}
+	\begin{description}
+		\item \textit{description :} traduire les blocs de la librairie Blockly dans le langage Lua, plus spécifiquement en eLua.
+		\item \textit{priorité :} moyenne
+		\item \textit{justification :} le robot étant "guidé" par du code eLua, il est nécessaire de procéder à une traduction du programme visuel dans ce langage avant de l'envoyer au robot pour être exécuté.
+	\end{description}
+	\item \textbf{créer un programme}
+	\begin{description}
+		\item \textit{description :} la création d'un nouveau programme blockly via l'application androïd.
+		\item \textit{priorité :} moyenne
+		\item \textit{justification :} c'est la fonctionnalité de base de l'application, il faut pouvoir créer de nouveaux programmes en vue de les écrire et de les exécuter.
+	\end{description}
+	\item \textbf{sauvegarder / charger des programmes}
+	\begin{description}
+		\item \textit{description :} l'utilisateur pourra sauvegarder les programmes sur lesquels il travaille, et reprendre sa progression là où il était en chargeant un programme parmi ceux enregistrés.
+		\item \textit{priorité :} basse
+		\item \textit{justification :} cela permettra de travailler sur un programme en plusieurs fois sans risque de perdre son travail. Cette fonctionnalité était à la base en option, mais l'architecture de notre application nécessite de pouvoir l'utiliser.
+	\end{description}
+\end{itemize}
+
+
+\chapter*{Besoins non fonctionnels}
+
+\begin{description}
+	\item [environnement de travail :]
+	\item [exécution en temps réel / rapidité :]
+	\item [simplicité d'utilisation : ]
+\end{description}
+
+
+\chapter*{Analyse de l'existant}
+
+Blockly : \cite{ref2}
+
+Composants du robot : \cite{ref1}
+
+
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+
+\end{document}
