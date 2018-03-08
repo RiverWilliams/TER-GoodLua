@@ -1,14 +1,48 @@
 \begin{thebibliography}{1}
 
-\bibitem{ref2}
-Google for education.
-\newblock Blockly, apr 2015.
-\newblock https://developers.google.com/blockly/.
-
 \bibitem{ref1}
 M1~info~promo 2015.
 \newblock Projet d'algorithmique répartie 2015, m1 info, université
   d'orléans, aug 2015.
 \newblock https://github.com/blgatelierl2/robot.
+
+\bibitem{ref3}
+X.~HINAULT.
+\newblock Le pcduino v3 (a20), jul 2014.
+\newblock
+  http://www.mon-club\-elec.fr/pmwiki\_mon\_club\_elec/pmwiki.php?n=MAIN.PCDUINO.
+
+\bibitem{ref4}
+dfrobot.
+\newblock Romeo v2-all in one controller (r3), may 2017.
+\newblock
+  https://www.dfrobot.com/wiki/index.php/Romeo\_V2\-All\_in\_one\_Controller\_(R3)\_(SKU:DFR0225).
+
+\bibitem{ref5}
+dfrobot.
+\newblock Baron-4wd arduino mobile robot platform with encoder).
+\newblock https://www.dfrobot.com/product\-261.html.
+
+\bibitem{ref6}
+dfrobot.
+\newblock Light disc, june 2017.
+\newblock https://www.dfrobot.com/wiki/index.php/Light\_Disc\_(SKU:DFR0106).
+
+\bibitem{ref7}
+dfrobot.
+\newblock Adjustable infrared sensor switch, may 2017.
+\newblock
+  https://www.dfrobot.com/wiki/index.php/Adjustable\_Infrared\_Sensor\_Switch\_(SKU:SEN0019).
+
+\bibitem{ref8}
+dfrobot.
+\newblock Urm37 v3.2 ultrasonic sensor, may 2017.
+\newblock
+  https://www.dfrobot.com/wiki/index.php/URM37\_V3.2\_Ultrasonic\_Sensor\_(SKU:SEN0001).
+
+\bibitem{ref2}
+Google for education.
+\newblock Blockly, apr 2015.
+\newblock https://developers.google.com/blockly/.
 
 \end{thebibliography}

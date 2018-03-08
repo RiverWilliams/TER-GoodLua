@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  7 MAR 2018 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  8 MAR 2018 20:01
 entering extended mode
 **./LaTeX1.tex
 (LaTeX1.tex
@@ -440,36 +440,66 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks18
 \enit@inbox=\box26
 \enitdp@description=\count98
-) (LaTeX1.aux)
+)
+("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrext
+end.sty"
+Package: scrextend 2017/09/07 v3.24 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkba
+se.sty"
+Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbas
+e.sty"
+Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfi
+le.sty"
+Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
+)))
+LaTeX Info: Redefining \textsubscript on input line 1318.
+)
+("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks19
+\float@box=\box27
+\@float@everytoks=\toks20
+\@floatcapt=\box28
+)
+(LaTeX1.aux)
 \openout1 = `LaTeX1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 ("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
+\scratchcounter=\count100
 \scratchdimen=\dimen109
-\scratchbox=\box27
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count102
+\scratchbox=\box29
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count103
 \MPscratchDim=\dimen110
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks22
 )
 ("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -534,78 +564,153 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \degres on input line 8.
-LaTeX Info: Redefining \dots on input line 8.
+LaTeX Info: Redefining \degres on input line 10.
+LaTeX Info: Redefining \dots on input line 10.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 8.
+(french.ldf)             reported on input line 10.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 8.
-LaTeX Info: Redefining \up on input line 8.
+(french.ldf)             reported on input line 10.
+LaTeX Info: Redefining \up on input line 10.
 
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 8.
+(french.ldf)                of your document; reported on input line 10.
 
 <./images/logo_universite_orleans.png, id=1, 1204.5pt x 695.59875pt>
 File: ./images/logo_universite_orleans.png Graphic file (type png)
 <use ./images/logo_universite_orleans.png>
 Package pdftex.def Info: ./images/logo_universite_orleans.png  used on input li
-ne 11.
+ne 13.
 (pdftex.def)             Requested size: 361.35278pt x 208.68123pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 30.
+(Font)              <12> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 30.
+(Font)              <8> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 30.
+(Font)              <6> on input line 32.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 23--38
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 25--40
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--38
+Underfull \hbox (badness 10000) in paragraph at lines 25--40
 
  []
 
 [1
 
 {C:/Users/Julie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/lo
-go_universite_orleans.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
+go_universite_orleans.png>] [2
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 ("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
 
-[2
+[3
 
-] [3] [4
-
-] (LaTeX1.bbl [5
+] [4] [5
 
 ]
-Underfull \hbox (badness 4673) in paragraph at lines 4--7
+<./images/notre_materiel.jpg, id=25, 973.9587pt x 694.5147pt>
+File: ./images/notre_materiel.jpg Graphic file (type jpg)
+<use ./images/notre_materiel.jpg>
+Package pdftex.def Info: ./images/notre_materiel.jpg  used on input line 106.
+(pdftex.def)             Requested size: 389.57658pt x 277.80095pt.
+
+Overfull \hbox (2.18767pt too wide) in paragraph at lines 106--107
+[][]  
+ []
+
+[6
+
+ <./images/notre_materiel.jpg>] [7] [8]
+<./images/intermediaireEffectif.jpg, id=36, 947.79094pt x 219.82124pt>
+File: ./images/intermediaireEffectif.jpg Graphic file (type jpg)
+<use ./images/intermediaireEffectif.jpg>
+Package pdftex.def Info: ./images/intermediaireEffectif.jpg  used on input line
+ 132.
+(pdftex.def)             Requested size: 568.67896pt x 131.89375pt.
+
+Overfull \hbox (108.17969pt too wide) in paragraph at lines 132--133
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+(LaTeX1.bbl [9
+
+ <./images/intermediaireEffectif.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
+[]\OT1/cmr/m/n/12 dfrobot.  Ro-meo v2-all in one control-ler (r3), may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
+\OT1/cmr/m/n/12 2017.  https ://www.dfrobot.com/wiki/index.php/Romeo[]V2-
+ []
+
+
+Overfull \hbox (155.82484pt too wide) in paragraph at lines 27--30
+[]\OT1/cmr/m/n/12 dfrobot.  Light disc, june 2017.  https ://www.dfrobot.com/wi
+ki/index.php/Light[]Disc[](SKU :DFR0106). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+[]\OT1/cmr/m/n/12 dfrobot.  Ad-jus-table in-fra-red sen-sor switch, may 2017.
+ []
+
+
+Overfull \hbox (123.36058pt too wide) in paragraph at lines 32--36
+\OT1/cmr/m/n/12 https ://www.dfrobot.com/wiki/index.php/Adjustable[]Infrared[]S
+ensor[]Switch[](SKU :SEN0019). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+[]\OT1/cmr/m/n/12 dfrobot.  Urm37 v3.2 ul-tra-so-nic sen-sor, may 2017.
+ []
+
+
+Overfull \hbox (108.82602pt too wide) in paragraph at lines 38--42
+\OT1/cmr/m/n/12 https ://www.dfrobot.com/wiki/index.php/URM37[]V3.2[]Ultrasonic
+[]Sensor[](SKU :SEN0001). 
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 44--47
 []\OT1/cmr/m/n/12 Google for edu-ca-tion.  Blo-ckly, apr 2015.  https ://de-ve-
 lo-
  []
 
-) [6
+) [10
 
 ] (LaTeX1.aux) ) 
 Here is how much of TeX's memory you used:
- 3314 strings out of 493303
- 48300 string characters out of 3129785
- 115423 words of memory out of 3000000
- 6821 multiletter control sequences out of 15000+200000
+ 4088 strings out of 493303
+ 62105 string characters out of 3129785
+ 149789 words of memory out of 3000000
+ 7575 multiletter control sequences out of 15000+200000
  8844 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,30p,289b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,7n,40p,778b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Julie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb><C:/Users/Julie/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Julie/AppData/Local/Progra
@@ -613,9 +718,9 @@ ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Julie/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/J
 ulie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on LaTeX1.pdf (6 pages, 128826 bytes).
+Output written on LaTeX1.pdf (10 pages, 1951964 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

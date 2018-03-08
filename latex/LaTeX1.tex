@@ -4,6 +4,8 @@
 \usepackage[pdftex]{graphicx}
 \usepackage[french]{babel}
 \usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage{float} 
 
 \begin{document}
 
@@ -39,6 +41,16 @@
 		\begin{center}
     {7 Février 2018 - 25 Mai 2018}
 		\end{center}
+		
+\chapter*{Résumé du projet}
+
+L’objet du projet est la conception d'un système pour la création et le lancement à distance de programme Lua s'exécutant sur un robot. Le système matériel est composé d'une tablette Androïd et '’un robot mobile à base pcDuino équipé de divers capteurs. Le logiciel de la tablette offrira la possibilité : 
+\begin{itemize}
+\item de concevoir des programmes
+\item de charger à distance le programme sur le robot 
+\item de télécommander le robot 
+\end{itemize} 
+Le système logiciel sur le robot permettra de recevoir et d'exécuter les programmes Lua transmis par la tablette.
 
 \chapter*{Besoins fonctionnels}
 
@@ -87,9 +99,42 @@
 
 \chapter*{Analyse de l'existant}
 
-Blockly : \cite{ref2}
+Nous avons reçu pour ce projet, un kit matériel qui forme le robot.\\
+Pour nous aider à découvrir son utilisation, nous avons étudié le projet d'algorithmique répartie des étudiants de la promotion 2015 des master 1 informatique \cite{ref1} dans lequel ils manipulent un robot semblable au notre, mais avec des des langages différent du notre (eLua) puisqu'ils l'ont contrôlé avec du python et du C++.
 
-Composants du robot : \cite{ref1}
+\begin{figure}[!h]
+\includegraphics[scale=0.4]{./images/notre_materiel.jpg}~\
+\caption{Notre materiel}
+\end{figure}
+	
+Voici la liste du matériel dont nous disposons et dont nous devrons nous servir pour ce projet :
+
+\begin{description}
+\item [Le pcDuino :] La carte pcDuino V3 est un mini PC possédant un processeur dual core A20. Une fois branchée à un écran, un clavier et une souris, grâce à son port USB, elle s'utilise de la même manière qu'un PC sous une distribution Ubuntu. Elle possède un lecteur de carte micro-sd, car c'est dans cette carte que se situe le système d'exploitation du pcDuino. Le pcDuino posssède également un port ethernet ainsi qu'une carte wifi, ce qui permet de se connecter à un réseau facilement. Pour le faire fonctionner, il suffit de le brancher à un chargeur USB par son port micro USB. Il possède enfin des broches arduino, en plus de ses interfaces de communication, permettant de faire de la programmation arduino.\cite{ref3}
+\item [L'arduino :] L'arduino Romeo V2.2 (R3) \cite{ref4} est un micro-contrôleur tout en un spécialement crée pour la robotique, qui fournit des interfaces de puissance pour contrôler des moteurs.
+\item [La plateforme mobile :] Notre robot est composé d'une châssis Baron - 4WD auquel sont associées 4 moteurs reliés à 4 roues codeuses. \cite{ref5}
+\item [La LED :] Le disque contient 7 LEDs RGB \cite{ref6}, que l'ont peut allumer grâce à 3 pins, un pour chaque couleur, ainsi qu'avec un pin d'alimentation.
+\item [Les capteurs infrarouges :] Les 3 capteurs possèdent une LED qui s'allume si un objet est dans le champs de détection. Ils ont une sortie binaire, selon si un obstacle est détecté ou non. Leur distance de détection peut être de 3 à 80 cm, et se règle manuellement avant l'utilisation. \cite{ref7}
+\item [Le capteur ultrasons :] Lié à l'arduino, il détecte des températures allant de -10 à environ 70 degrés celsius, à une distance de 4cm, jusqu'à 5m. \cite{ref8}
+\end{description}
+
+\bigskip
+\begin{description}
+\item [Blockly :] Nous utilisons la bibliothèque Blockly \cite{ref2} pour avoir un éditeur de code visuel. Blockly se présente sous forme de pièces de puzzle, chacune représentant un concept de code, comme une fonction, une condition, une boucle ou une variable. L'utilisateur n'a donc qu'à sélectionner et faire glisser les pièces pour les placer et les  imbriquer, afin de former un programme. Il n'a donc pas à s'occuper de la syntaxe, puisque les formes des pièces lui indique où il peut les placer ou non. Une fois le programme formé, Blockly peut le transformer en différents langages (JavaScript, Python, PHP, Dart) dont celui qui nous intéresse pour ce projet, le Lua.\\
+Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de notre choix, correspondant à des fonctions à appliquer sur le robot, d'intégrer l'éditeur Blockly à notre application Androïd, et de générer le code à exécuter.
+\end{description}
+
+\chapter*{Planning}
+
+Planning effectif jusqu'au rendu du présent rapport :\\
+\begin{figure}[!h]
+\begin{addmargin}[-7em]{1em}
+\includegraphics[scale=0.6]{./images/intermediaireEffectif.jpg}~\\[1.5cm]
+\caption{Planning du 13 février au 18 mars}
+\end{addmargin}
+\end{figure}
+
+Planning prévisionnel pour la suite du projet :\\
 
 
 \bibliographystyle{unsrt}
