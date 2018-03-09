@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  8 MAR 2018 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  9 MAR 2018 20:37
 entering extended mode
 **./LaTeX1.tex
 (LaTeX1.tex
@@ -606,55 +606,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--40
 {C:/Users/Julie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/lo
 go_universite_orleans.png>] [2
 
+] [3
+
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 
 ("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
 
-[3
-
-] [4] [5
+[4
 
 ]
-<./images/notre_materiel.jpg, id=25, 973.9587pt x 694.5147pt>
-File: ./images/notre_materiel.jpg Graphic file (type jpg)
-<use ./images/notre_materiel.jpg>
-Package pdftex.def Info: ./images/notre_materiel.jpg  used on input line 106.
-(pdftex.def)             Requested size: 389.57658pt x 277.80095pt.
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
-Overfull \hbox (2.18767pt too wide) in paragraph at lines 106--107
-[][]  
  []
 
-[6
+<./images/maquette1.jpg, id=22, 1221.06187pt x 1178.90437pt>
+File: ./images/maquette1.jpg Graphic file (type jpg)
+<use ./images/maquette1.jpg>
+Package pdftex.def Info: ./images/maquette1.jpg  used on input line 100.
+(pdftex.def)             Requested size: 549.47276pt x 530.50208pt.
 
- <./images/notre_materiel.jpg>] [7] [8]
-<./images/intermediaireEffectif.jpg, id=36, 947.79094pt x 219.82124pt>
-File: ./images/intermediaireEffectif.jpg Graphic file (type jpg)
-<use ./images/intermediaireEffectif.jpg>
-Package pdftex.def Info: ./images/intermediaireEffectif.jpg  used on input line
- 132.
-(pdftex.def)             Requested size: 568.67896pt x 131.89375pt.
-
-Overfull \hbox (108.17969pt too wide) in paragraph at lines 132--133
+Overfull \hbox (88.9735pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+LaTeX Warning: Float too large for page by 66.01451pt on input line 103.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/maquette2.jpg, id=23, 870.25125pt x 609.77812pt>
+File: ./images/maquette2.jpg Graphic file (type jpg)
+<use ./images/maquette2.jpg>
+Package pdftex.def Info: ./images/maquette2.jpg  used on input line 107.
+(pdftex.def)             Requested size: 522.15479pt x 365.86969pt.
+
+Overfull \hbox (85.15527pt too wide) in paragraph at lines 107--108
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-(LaTeX1.bbl [9
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] [6 <./images/maquette1.jpg>] [7 <./images/maquette2.jpg>]
+Overfull \hbox (5.87805pt too wide) in paragraph at lines 118--119
+[]\OT1/cmr/m/n/12 Nous tra-vaillons sous une dis-tri-bu-tion Ubuntu.
+ []
+
+[8
+
+]
+<./images/notre_materiel.jpg, id=37, 973.9587pt x 694.5147pt>
+File: ./images/notre_materiel.jpg Graphic file (type jpg)
+<use ./images/notre_materiel.jpg>
+Package pdftex.def Info: ./images/notre_materiel.jpg  used on input line 130.
+(pdftex.def)             Requested size: 389.57658pt x 277.80095pt.
+
+Overfull \hbox (2.18767pt too wide) in paragraph at lines 130--131
+[][]  
+ []
+
+[9
+
+ <./images/notre_materiel.jpg>] [10] [11]
+<./images/intermediaireEffectif.jpg, id=47, 947.79094pt x 219.82124pt>
+File: ./images/intermediaireEffectif.jpg Graphic file (type jpg)
+<use ./images/intermediaireEffectif.jpg>
+Package pdftex.def Info: ./images/intermediaireEffectif.jpg  used on input line
+ 156.
+(pdftex.def)             Requested size: 568.67896pt x 131.89375pt.
+
+Overfull \hbox (108.17969pt too wide) in paragraph at lines 156--157
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+(LaTeX1.bbl [12
 
  <./images/intermediaireEffectif.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
@@ -700,14 +751,14 @@ Underfull \hbox (badness 4673) in paragraph at lines 44--47
 lo-
  []
 
-) [10
+) [13
 
 ] (LaTeX1.aux) ) 
 Here is how much of TeX's memory you used:
- 4088 strings out of 493303
- 62105 string characters out of 3129785
+ 4098 strings out of 493303
+ 62345 string characters out of 3129785
  149789 words of memory out of 3000000
- 7575 multiletter control sequences out of 15000+200000
+ 7583 multiletter control sequences out of 15000+200000
  8844 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,7n,40p,778b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -718,9 +769,9 @@ ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Julie/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/J
 ulie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on LaTeX1.pdf (10 pages, 1951964 bytes).
+Output written on LaTeX1.pdf (13 pages, 2251915 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

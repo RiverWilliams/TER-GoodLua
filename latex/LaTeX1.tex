@@ -52,6 +52,8 @@ L’objet du projet est la conception d'un système pour la création et le lanc
 \end{itemize} 
 Le système logiciel sur le robot permettra de recevoir et d'exécuter les programmes Lua transmis par la tablette.
 
+\chapter*{Introduction au domaine}
+
 \chapter*{Besoins fonctionnels}
 
 \begin{itemize}[label=\textbullet]
@@ -87,13 +89,35 @@ Le système logiciel sur le robot permettra de recevoir et d'exécuter les progr
 	\end{description}
 \end{itemize}
 
+\bigskip
+\textbf{Prototype - l'interface de l'application Androïd :}\\
+En ouvrant l'application, l'utilisateur se verra proposer de créer un nouveau programme, il devra alors lui donner un nom, ou alors de charger un programme déjà existant, en choisissant dans une liste. Une fois le programme sélectionné ou créé, il aura le choix de le modifier ou de l'exécuter. [Figure 1]
+
+Dans le cas du choix de modifier le code, on ouvrira l'éditeur visuel contenant Blockly avec l'ensemble des blocs disponibles dans une barre latérale gauche. Un menu permettra également de sauvegarder le programme en cours d'édition ou de l'effacer. [Figure 2]\\
+
+\begin{figure}[!h]
+\begin{addmargin}[-7em]{1em}
+\includegraphics[scale=0.45]{./images/maquette1.jpg}~\\[1.5cm]
+\caption{Maquette 1ère partie}
+\end{addmargin}
+\end{figure}
+
+\begin{figure}[!h]
+\begin{addmargin}[-5em]{1em}
+\includegraphics[scale=0.6]{./images/maquette2.jpg}~\\[1.5cm]
+\caption{Maquette 2ème partie}
+\end{addmargin}
+\end{figure}
+
+
+
 
 \chapter*{Besoins non fonctionnels}
 
 \begin{description}
-	\item [environnement de travail :]
-	\item [exécution en temps réel / rapidité :]
-	\item [simplicité d'utilisation : ]
+	\item [environnement de travail :]Nous travaillons sous une distribution Ubuntu. Pour la partie programmation en eLua, il est possible d'utiliser n'importe quel éditeur de texte, puis de compiler le fichier.
+	\item [exécution en temps réel / rapidité :] Il serait préférable que l'exécution d'un programme se fasse de manière assez rapide, pour ne pas aller contre les attentes de l'utilisateur. Par exemple, si le programme utilise des capteurs, mais qu'une lenteur dans le programme fait qu'un obstacle n'est pas détecté à temps, cela nuira à l'expérience de l'utilisateur. De même, l'un des buts de l'application, est de pouvoir exécuter une séquence, ou de donner des ordres au robot en temps réel.
+	\item [simplicité d'utilisation : ]L'application doit être utilisable par des utilisateurs sachant programmer, qui pourront créer un programme complexe à partir des blocs basiques, mais elle doit également être accessible à des utilisateurs débutants en programmation, qui pourront utiliser des blocs représentant des fonctions toutes faites concernant le robot (par exemple : allumer LED). Les blocs et l'interface devront donc être instinctifs et simples d'utilisation.
 \end{description}
 
 
