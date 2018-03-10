@@ -5,9 +5,14 @@ import android.os.Bundle;
 
 import com.google.blockly.android.AbstractBlocklyActivity;
 import com.google.blockly.android.codegen.CodeGenerationRequest;
+import com.google.blockly.android.codegen.LanguageDefinition;
 import com.google.blockly.android.codegen.LoggingCodeGeneratorCallback;
 import com.google.blockly.model.DefaultBlocks;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -32,20 +37,35 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
         return assetPaths;
     }
 
-    private static final List<String> JAVASCRIPT_GENERATORS = Arrays.asList(
+    private static final List<String> LUA_GENERATORS = Arrays.asList(
             // Custom block generators go here. Default blocks are already included.
     );
 
     @Override
     protected List<String> getGeneratorsJsPaths() {
-        return JAVASCRIPT_GENERATORS;
+        return LUA_GENERATORS;
     }
 
     CodeGenerationRequest.CodeGeneratorCallback mCodeGeneratorCallback =
             new LoggingCodeGeneratorCallback(this, "LoggingTag");
 
+    /*void SaveGeneratdeCode(String code) throws IOException {
+        FileOutputStream out;
+        //FileOutputStream out = new FileOutputStream("sortie.txt");
+        out = openFileOutput("sortie.txt", MODE_WORLD_READABLE);
+        out.write(code.getBytes());
+        out.close();
+    }*/
+
     @Override
     protected CodeGenerationRequest.CodeGeneratorCallback getCodeGenerationCallback() {
+       /* String s = mCodeGeneratorCallback.toString();
+        try {
+            SaveGeneratdeCode(s);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }*/
         return mCodeGeneratorCallback;
     }
 
@@ -54,6 +74,12 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
         // Initialize available variable names.
         getController().addVariable("item");
     }
+
+    //@Override
+   protected LanguageDefinition getBlockGeneratorLanguage() {
+        return new LanguageDefinition("lua/lua_compressed.js", "Blockly.Lua");
+    }
+
 
 
 
