@@ -9,13 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="stateHidden|adjustPan">
-        <activity android:name=".MyBlockyActivity">
+        <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MyBlockyActivity"
+            android:label="@string/title_activity_login_display" />
+        <activity
+            android:name=".ProgramLoadedActivity" />
+        <activity
+            android:name=".NewProgActivity" />
     </application>
 
 </manifest>

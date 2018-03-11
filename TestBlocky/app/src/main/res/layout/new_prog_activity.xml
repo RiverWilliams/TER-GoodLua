@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/large_padding"
+        android:textSize="@dimen/big_text_size"
+        android:text="@string/name"
+        android:textColor="@color/dark" />
+
+    <EditText
+        android:id="@+id/program_name"
+        android:layout_width="@dimen/extra_padding"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:textSize="@dimen/medium_text_size"/>
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider"
+        android:paddingTop="@dimen/layout_padding_top"
+        android:paddingBottom="@dimen/layout_padding_bottom"
+        android:textSize="@dimen/big_text_size"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:minWidth="@dimen/layout_width"/>
+
+
+</LinearLayout>
