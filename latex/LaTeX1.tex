@@ -57,6 +57,52 @@ Le système logiciel sur le robot permettra de recevoir et d'exécuter les progr
 \newpage 
 \section*{Introduction au domaine}
 
+\paragraph*{Quelles sont les possibilités de Blockly ?\\}
+
+Blockly a principalement deux utilités. La première est l'apprentissage de la programmation via un moyen visuel, et la seconde est le développement de programmes embarqués, notamment en robotique.
+	
+La simplicité d'utilisation de Blockly en fait un outils d'apprentissage très pratique, et ce dès le plus jeune âge. En effet, il suffit de choisir puis glisser des blocs, afin de les imbriquer, comme des pièces de puzzle. Plusieurs sites, jeux et applications proposent des moyens ludiques basés sur Blockly pour apprendre à programmer. Le site le plus connu est celui proposant la série des 'Blockly Games' \cite{ref12}. Existant dans un très grand nombre de langues, il contient plusieurs jeux, de 10 niveaux chacun, avec une augmentation progressive de la difficulté de niveau en niveau et de jeu en jeu afin de découvrir le développement. Le premier de ces jeux est un simple puzzle sur les animaux, afin de découvrir le fonctionnement de Blockly. Le second jeu est un labyrinthe qui utilise des conditionnelles et des boucles. Le jeu suivant, qui permet de diriger les déplacements d'un oiseau, rentre plus sérieusement dans les 2 thèmes du jeu précédent. Suit un jeu qui fait découvrir le dessin via la programmation, puis un autre qui permet de créer des animations évoluant selon le temps. Enfin, on est amenés à coder un petit jeu de tir, tout d'abord avec des blocs, puis en JavaScript à partir de ces blocs. Il existe plusieurs autres séries de jeux basés sur Blockly, on peut notament citer 'Rapid Router' \cite{ref13} qui en 100 niveaux initie les enfants au Python. Ces jeux, généralement accessibles à partir de 8 ans, sont une solution ludique, permise par Blockly pour initier les plus jeunes à la programmation.
+
+Blockly est également utilisé en robotique, dans de nombreux projets. En effet, la bibliothèque étant libre, elle permet de coder ses propres blocs. Les utilisateurs de robots peuvent donc pré-coder les différentes fonctionnalités, et n'ont donc plus qu'à les assembler dans la séquence souhaitée lors de l'exécution. Encore une fois, cette manière d'utiliser Blockly, bien que pratique pour faire du développement embarqué, est aussi et surtout un moyen d'apprendre simplement la programmation sur robot. Par exemple, le robot 'Thymio' \cite{ref14} est un petit robot qui permet de découvrir l'univers de la robotique et sa programmation. Ce robot fournit une intégration de Blockly, qui permet \textit{"de le programmer de façon purement événementielle"}. Un environnement 'Blockly4Thymio' \cite{ref15} a également été ajouté au projet, et offre un apprentissage ludique, destiné à un jeune public.
+
+A l'exception de quelques jeux, généralement mobiles, destinés au grand public et basés sur la librairie Blockly, sa principale utilisation reste donc dans un but éducatif, comme l'avait prévu Google en la créant.
+
+
+\paragraph*{Quels sont les autres moyens visuels d'apprentissage de la programmation ?\\}
+
+De nos jours de nombreux langages sont développés dans le but de pouvoir enseigner à programmer. Ces langages ont tous des particularités qui permettent de faciliter l'utilisation par des personnes qui sont peu familières avec le monde du développement et peuvent être classées selon deux grandes catégories.
+
+La première regroupe des langages disposant de syntaxes simples ce qui permet une utilisation simple due au fait que l'on traduit d'une manière naturelle ce que l'on attend de notre programme en un code. De plus ces langages sont également utilisés pour développer de réels projets, ce qui permet d'apprendre avec un langage simple mais qui peut être utilisé dans le domaine professionnel. Des exemples pour ces types de langage sont : Python, Ruby.
+
+Le deuxième groupe rassemble des langages visant plus à apprendre le concept de comment programmer plutôt que de réellement apprendre un langage de développement. Pour cela il se base sur une interface graphique simple d'utilisation, le plus généralement les fonctions, actions et événements ont la forme de bloc  que l'utilisateur combinent les un avec les autres en les faisant glisser. Cette catégorie comprend des langages telle que 'Scratch' \cite{ref17}, qui est actuellement utilisé dans les écoles et collèges, 'Alice' \cite{ref19} et 'LEGO Mindstorm Robotics' \cite{ref18}. Ce dernier est d'ailleurs utilisé dans le but d'enseigner le développement pour la robotique car il  permet de programmer des robot tout en restant simple d'utilisation.
+
+\textit{"Most jobs in the future will most likely have some sort of connection to coding"}  Navdeep Bains, Ministre canadien de l'innovation,des science et du dévelopement econimique.
+
+\textit{“ICT used to focus purely on computer literacy – teaching pupils, over and over again, how to word-process, how to work a spreadsheet, how to use programs already creaking into obsolescence; about as much use as teaching children to send a telex or travel in a zeppelin.
+Our new curriculum teaches children computer science, information technology and digital literacy: teaching them how to code,and how to create their own programs; not just how to work a computer, but how a computer works and how to make it work for you.”}
+Michael Goove, secrétaire d'état a l'éducation du Royaume-Uni (2010-2014) \cite{ref16}
+
+\paragraph*{Comment apprendre à développer grâce à des robots \\?}
+
+Des personnes ou des sociétés de plusieurs horizons ont cherché à rendre accessible l'apprentissage de la programmation via des robots, en voici quelques exemples :
+
+Jacqueline M. Kory Westlund est une chercheuse travaillant au MIT. Son domaine de recherche est les interactions entre l'homme et la machine.
+Elle crée des robots pour les enfants et étudie leurs relations et les possibilités d'apprentissage.\cite{ref9}
+Le robot est dirigé par une application sous Android.
+
+'Cozmo' est un robot développé par la société Anki. Ce robot possède la technologie 'Code Lab', qui est basée sur Scratch.\cite{ref10} 
+'Code Lab' possède une interface graphique intuitive et propose une manière simple de programmer le robot.
+Chaque fonctionnalité est représentée par un bloc d'une certaine forme.
+Ces blocs s'assemblent les uns dans les autres et permettent à un utilisateur sans connaissance en programmation d'ajouter une nouvelle fonctionnalité au robot.
+
+'Hexa' est un robot produit par la société Vincross. Devant l'absence d'OS orienté robot, ils ont créé le leur: 'MIND' \cite{ref11},
+basé sur une architecture Linux. De nombreuses librairies sont proposées afin de contrôler facilement le robot.
+Une de leurs librairies propose une interface 3D afin de permettre aux non-développeurs de créer des mouvements et des comportements complexes.
+Une application est disponible sur iOS et android pour contrôler le robot à distance.
+
+\paragraph*{Quelles sont les possibilités de l'embarqué ?\\}
+
+
 \newpage
 \section*{Analyse de l'existant}
 
