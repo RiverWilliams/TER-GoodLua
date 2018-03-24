@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  24 MAR 2018 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  24 MAR 2018 15:42
 entering extended mode
 **./LaTeX1.tex
 (LaTeX1.tex
@@ -607,12 +607,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--40
 go_universite_orleans.png>] [2
 
 ] [3] [4]
-Overfull \hbox (7.01532pt too wide) in paragraph at lines 87--88
-\OT1/cmr/m/n/12 ac-ces-sible l'ap-pren-tis-sage de la pro-gram-ma-tion via des 
-ro-bots, en voici quelques
- []
-
-
 Overfull \hbox (11.71527pt too wide) in paragraph at lines 105--106
 \OT1/cmr/m/n/12 barques de voi-tures a tous les ob-jets connectes de la mai-
 son, et est decomposable
@@ -798,7 +792,7 @@ ets-
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 79--81
-[]\OT1/cmr/m/n/12 incubateur oeufs de rep-tiles, aug 201.  https ://fo-
+[]\OT1/cmr/m/n/12 incubateur oeufs de rep-tiles, aug 2017.  https ://fo-
  []
 
 
@@ -861,7 +855,7 @@ rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Julie/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
 ers/Julie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on LaTeX1.pdf (17 pages, 2355453 bytes).
+Output written on LaTeX1.pdf (17 pages, 2355451 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
