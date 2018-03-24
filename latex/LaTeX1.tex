@@ -102,6 +102,22 @@ Une application est disponible sur iOS et android pour contrôler le robot à di
 
 \paragraph*{Quelles sont les possibilités de l'embarqué ?\\}
 
+La programmation embarquée est un vaste domaine, allant des systèmes embarqués de voitures à tous les objets connectés de la maison, et est décomposable en de nombreux sous-domaines. Nous allons ici plus particulièrement nous intéresser aux possibilités offertes par l'arduino en matière d'embarqué.
+
+La domotique est l'un des champs d'utilisation d'un arduino \cite{ref20}. Grâce à leur petite taille, beaucoup d'objets domestiques sont contrôlés par des arduinos. Prenons par exemples quelques objets que l'on peut utiliser dans son jardin, et qu'il est possible de créer soi-même, ou qui existent dans le commerce, et qui utilisent un arduino \cite{ref21}: 
+
+- un verrou électrique à code, pour sécuriser un portail, contrôlé par un arduino, et composé d'un verrou, d'un clavier et d'un afficheur LED, auquel on peut aussi ajouter un lecteur de badges RDID (identification par radiofréquence).
+
+- un arrosage automatique, composé d'une sonde de détection d'humidité, une vanne électromagnétique, et une carte arduino, qui selon le niveau d'humidité du sol va activer un arrosage.
+
+- un lampadaire, qui grâce à un capteur de lumière et un arduino pourra s'allumer de la tombée de la nuit jusqu'à une certaine heure.
+
+- une station météo, qui pourra surveiller la luminosité, la température et l'humidité, et vous prévenir sur votre smartphone.
+
+Arduino est également beaucoup utilisé en robotique, car ces cartes permettent de contrôler plusieurs éléments, d'autant plus lorsqu'elles sont associées à un micro-ordinateur (Raspberry Pi, pcDuino). Par exemple, une carte pourra contrôler l'activation des moteurs, tout en surveillant leur chaleur grâce à un capteur, et les arrêter en cas de surchauffe. Elle pourra aussi recevoir des informations transmises par des capteurs infrarouges, ultrasons, ou même une caméra, et réagir en conséquence. \cite{ref22}
+
+Les champs des utilisations d'arduino étant très vaste, l'imagination de sa communauté d'utilisateurs en est la seule limite. Parmis les projets sortant de l'ordinaire, ont été créés un fauteuil roulant motorisé avec joystick \cite{ref23}, des jouets tels que des petits trains autonomes ou des voitures télécommandées, un gps, des volets roulants connectés, un incubateur d'oeufs connecté \cite{ref24}, et bien d'autres.
+
 
 \newpage
 \section*{Analyse de l'existant}
@@ -176,7 +192,7 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 \section*{Besoins non fonctionnels}
 
 \begin{description}
-	\item [Environnement de travail :]Nous travaillons sous une distribution Ubuntu. Pour la partie programmation en eLua, il est possible d'utiliser n'importe quel éditeur de texte, puis de compiler le fichier.
+	\item [Environnement de travail :]Nous travaillons sous une distribution Ubuntu. Pour la partie programmation en eLua, une version embarquée du langage Lua \cite{refLua}, il est possible d'utiliser n'importe quel éditeur de texte, puis de compiler le fichier.
 	\item [Exécution en temps réel / rapidité :] Il serait préférable que l'exécution d'un programme se fasse de manière assez rapide, pour ne pas aller contre les attentes de l'utilisateur. Par exemple, si le programme utilise des capteurs, mais qu'une lenteur dans le programme fait qu'un obstacle n'est pas détecté à temps, cela nuira à l'expérience de l'utilisateur. De même, l'un des buts de l'application, est de pouvoir exécuter une séquence, ou de donner des ordres au robot en temps réel. 
 	\item [Simplicité d'utilisation : ]L'application doit être utilisable par des utilisateurs sachant programmer, qui pourront créer un programme complexe à partir des blocs basiques, mais elle doit également être accessible à des utilisateurs débutants en programmation, qui pourront utiliser des blocs représentant des fonctions toutes faites concernant le robot (par exemple : allumer LED). Les blocs et l'interface devront donc être instinctifs et simples d'utilisation.
 	\item [Empreinte mémoire :] Le poids de l'application Androïd doit être le plus petit possible car la tablette possède une mémoire limitée.
@@ -223,6 +239,11 @@ Planning prévisionnel pour la suite du projet :\\
 \caption{Planning du 19 mars au 25 mai}
 \end{addmargin}
 \end{figure}
+
+\textbf{Répartition du travail :}
+Durant toute la phase de recherche et de réflexion, nous nous sommes répartis les points sur lesquels il fallait trouver des informations, et nous avons régulièrement rassemblés les connaissances trouvées.
+Pour la programmation de l'application et du robot, nous prévoyons de beaucoup travailler ensemble, puisque nous n'avons qu'un robot et une tablette, mais certaines tâches seront réparties, comme par exemple la création des nouveaux blocs Blockly propre à notre projet, certaines fonctionnalités de l'application testables via Android Studio, ou l'écriture des tests unitaires. En revanche des tâches comme la connexion du robot à la tablette, l'écriture du code Lua ou les tests sur le matériel ne pourront être réalisés qu'avec le groupe complet.
+
 
 \bibliographystyle{unsrt}
 \bibliography{biblio}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  21 MAR 2018 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.2)  24 MAR 2018 14:38
 entering extended mode
 **./LaTeX1.tex
 (LaTeX1.tex
@@ -613,123 +613,124 @@ ro-bots, en voici quelques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-
+Overfull \hbox (11.71527pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/12 barques de voi-tures a tous les ob-jets connectes de la mai-
+son, et est decomposable
  []
 
-[5]
-<./images/notre_materiel.jpg, id=24, 973.9587pt x 694.5147pt>
+[5] [6]
+<./images/notre_materiel.jpg, id=27, 973.9587pt x 694.5147pt>
 File: ./images/notre_materiel.jpg Graphic file (type jpg)
 <use ./images/notre_materiel.jpg>
-Package pdftex.def Info: ./images/notre_materiel.jpg  used on input line 113.
+Package pdftex.def Info: ./images/notre_materiel.jpg  used on input line 129.
 (pdftex.def)             Requested size: 389.57658pt x 277.80095pt.
 
-Overfull \hbox (2.18767pt too wide) in paragraph at lines 113--114
+Overfull \hbox (2.18767pt too wide) in paragraph at lines 129--130
 [][]  
  []
 
-[6 <./images/notre_materiel.jpg>] [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 139.
+[7 <./images/notre_materiel.jpg>] [8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 155.
 
 
 ("C:\Users\Julie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
 
-[8
+[9
 
 ]
-Overfull \hbox (8.57945pt too wide) in paragraph at lines 179--180
+Overfull \hbox (8.57945pt too wide) in paragraph at lines 195--196
 []\OT1/cmr/m/n/12 Nous tra-vaillons sous une dis-tri-bu-tion Ubuntu.
  []
 
-[9]
-Overfull \hbox (1.54976pt too wide) in paragraph at lines 186--186
+[10]
+Overfull \hbox (1.54976pt too wide) in paragraph at lines 202--202
 []\OT1/cmr/bx/n/17.28 Prototype - l'in-ter-face de l'ap-pli-ca-tion An-drod 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-<./images/maquette1.jpg, id=39, 1221.06187pt x 1178.90437pt>
+<./images/maquette1.jpg, id=42, 1221.06187pt x 1178.90437pt>
 File: ./images/maquette1.jpg Graphic file (type jpg)
 <use ./images/maquette1.jpg>
-Package pdftex.def Info: ./images/maquette1.jpg  used on input line 193.
+Package pdftex.def Info: ./images/maquette1.jpg  used on input line 209.
 (pdftex.def)             Requested size: 549.47276pt x 530.50208pt.
 
-Overfull \hbox (88.9735pt too wide) in paragraph at lines 193--194
+Overfull \hbox (88.9735pt too wide) in paragraph at lines 209--210
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-LaTeX Warning: Float too large for page by 66.01451pt on input line 196.
+LaTeX Warning: Float too large for page by 66.01451pt on input line 212.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/maquette2.jpg, id=40, 870.25125pt x 609.77812pt>
+<./images/maquette2.jpg, id=43, 870.25125pt x 609.77812pt>
 File: ./images/maquette2.jpg Graphic file (type jpg)
 <use ./images/maquette2.jpg>
-Package pdftex.def Info: ./images/maquette2.jpg  used on input line 200.
+Package pdftex.def Info: ./images/maquette2.jpg  used on input line 216.
 (pdftex.def)             Requested size: 522.15479pt x 365.86969pt.
 
-Overfull \hbox (85.15527pt too wide) in paragraph at lines 200--201
+Overfull \hbox (85.15527pt too wide) in paragraph at lines 216--217
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] [11 <./images/maquette1.jpg>] [12 <./images/maquette2.jpg>]
-<./images/intermediaireEffectif.jpg, id=50, 947.79094pt x 219.82124pt>
+[11] [12 <./images/maquette1.jpg>] [13 <./images/maquette2.jpg>]
+<./images/intermediaireEffectif.jpg, id=54, 947.79094pt x 219.82124pt>
 File: ./images/intermediaireEffectif.jpg Graphic file (type jpg)
 <use ./images/intermediaireEffectif.jpg>
 Package pdftex.def Info: ./images/intermediaireEffectif.jpg  used on input line
- 213.
+ 229.
 (pdftex.def)             Requested size: 568.67896pt x 131.89375pt.
 
-Overfull \hbox (108.17969pt too wide) in paragraph at lines 213--214
+Overfull \hbox (108.17969pt too wide) in paragraph at lines 229--230
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[13
+[14
 
  <./images/intermediaireEffectif.jpg>]
-<./images/previsionnel.jpg, id=55, 985.43156pt x 225.84375pt>
+<./images/previsionnel.jpg, id=58, 985.43156pt x 225.84375pt>
 File: ./images/previsionnel.jpg Graphic file (type jpg)
 <use ./images/previsionnel.jpg>
-Package pdftex.def Info: ./images/previsionnel.jpg  used on input line 222.
+Package pdftex.def Info: ./images/previsionnel.jpg  used on input line 238.
 (pdftex.def)             Requested size: 591.2635pt x 135.50728pt.
 
-Overfull \hbox (119.01436pt too wide) in paragraph at lines 222--223
+Overfull \hbox (119.01436pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-(LaTeX1.bbl [14 <./images/previsionnel.jpg>]
+(LaTeX1.bbl [15 <./images/previsionnel.jpg>]
 Underfull \hbox (badness 5711) in paragraph at lines 4--7
 []\OT1/cmr/m/n/12 Neil Fra-ser.  Blo-ckly games, jan 2015.  https ://blockly-
  []
@@ -782,57 +783,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--52
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 70--74
+Underfull \hbox (badness 1635) in paragraph at lines 58--63
+\OT1/cmr/m/n/12 dans vos pro-jets do-mo-tique ?, feb 2017.  https ://www.maison
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--63
+\OT1/cmr/m/n/12 et-domotique.com/72194-devriez-utiliser-cartes-arduino-vos-proj
+ets-
+ []
+
+[16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+[]\OT1/cmr/m/n/12 incubateur oeufs de rep-tiles, aug 201.  https ://fo-
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 95--99
 []\OT1/cmr/m/n/12 dfrobot.  Ro-meo v2-all in one control-ler (r3), may 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 \OT1/cmr/m/n/12 https ://www.dfrobot.com/wiki/index.php/ Ro-meo[]V2-
  []
 
-[15
 
-]
-Overfull \hbox (6.48433pt too wide) in paragraph at lines 81--84
+Overfull \hbox (6.48433pt too wide) in paragraph at lines 106--109
 []\OT1/cmr/m/n/12 dfrobot.  Light disc, june 2017.  https ://www.dfrobot.com/wi
 ki/index.php
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 []\OT1/cmr/m/n/12 dfrobot.  Ad-jus-table in-fra-red sen-sor switch, may 2017.
  []
 
 
-Overfull \hbox (1.15814pt too wide) in paragraph at lines 86--90
+Overfull \hbox (1.15814pt too wide) in paragraph at lines 111--115
 \OT1/cmr/m/n/12 https ://www.dfrobot.com/wiki/index.php/Adjustable[]Infrared[]S
 ensor[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
 []\OT1/cmr/m/n/12 dfrobot.  Urm37 v3.2 ul-tra-so-nic sen-sor, may 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
 \OT1/cmr/m/n/12 https ://www.dfrobot.com/wiki/index.php/URM37[]V3.2[]Ultrasonic
 []
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 98--101
+Underfull \hbox (badness 3690) in paragraph at lines 123--126
 []\OT1/cmr/m/n/12 Google for edu-ca-tion.  Blo-ckly, apr 2015.  https ://de-ve-
 lo-
  []
 
-) [16] (LaTeX1.aux) ) 
+) [17] (LaTeX1.aux) ) 
 Here is how much of TeX's memory you used:
- 4119 strings out of 493303
- 62627 string characters out of 3129785
- 149852 words of memory out of 3000000
- 7603 multiletter control sequences out of 15000+200000
+ 4125 strings out of 493303
+ 62670 string characters out of 3129785
+ 149882 words of memory out of 3000000
+ 7609 multiletter control sequences out of 15000+200000
  9450 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,7n,40p,1584b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -843,9 +861,9 @@ rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Julie/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
 ers/Julie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on LaTeX1.pdf (16 pages, 2350224 bytes).
+Output written on LaTeX1.pdf (17 pages, 2355453 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

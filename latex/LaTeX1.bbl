@@ -54,6 +54,31 @@ Celia Gorman and Evan Ackerman.
 A universal robotics os and sdk.
 \newblock https://www.vincross.com/en/mind.
 
+\bibitem{ref20}
+Gaetan Cottrez.
+\newblock Pourquoi vous devriez utiliser des cartes arduino dans vos projets
+  domotique ?, feb 2017.
+\newblock
+  https://www.maison-et-domotique.com/72194-devriez-utiliser-cartes-arduino-vos-projets-domotique/).
+
+\bibitem{ref21}
+Brock Craft.
+\newblock {\em Projets Arduino pour les nuls}.
+\newblock First, 2016.
+
+\bibitem{ref22}
+Simon Monk.
+\newblock {\em Mouvement, lumière et son avec Arduino et Raspberry Pi}.
+\newblock Eyrolles, 2016.
+
+\bibitem{ref23}
+Fauteuil roulant 2 moteurs dc, joystick, batterie lithium, mar 2018.
+\newblock https://forum.arduino.cc/index.php?topic=536596.0.
+
+\bibitem{ref24}
+incubateur oeufs de reptiles, aug 201.
+\newblock https://forum.arduino.cc/index.php?topic=497212.0.
+
 \bibitem{ref1}
 M1~info~promo 2015.
 \newblock Projet d'algorithmique répartie 2015, m1 info, université
@@ -98,5 +123,10 @@ dfrobot.
 Google for education.
 \newblock Blockly, apr 2015.
 \newblock https://developers.google.com/blockly/.
+
+\bibitem{refLua}
+Doillon Lhost~Rapin Fabre~Chapuis.
+\newblock {\em Le guide de Lua et ses applications}.
+\newblock D-Booker, 2016.
 
 \end{thebibliography}
