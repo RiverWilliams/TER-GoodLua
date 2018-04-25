@@ -49,23 +49,23 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
     CodeGenerationRequest.CodeGeneratorCallback mCodeGeneratorCallback =
             new LoggingCodeGeneratorCallback(this, "LoggingTag");
 
-    /*void SaveGeneratdeCode(String code) throws IOException {
-        FileOutputStream out;
-        //FileOutputStream out = new FileOutputStream("sortie.txt");
-        out = openFileOutput("sortie.txt", MODE_WORLD_READABLE);
-        out.write(code.getBytes());
-        out.close();
-    }*/
+    void SaveGeneratdeCode(String code) throws IOException {
+        FileOutputStream out = openFileOutput("test.txt",MODE_APPEND);
+        OutputStreamWriter osw = new OutputStreamWriter(out);
+        osw.write(code);
+        osw.flush();
+        osw.close();
+    }
 
     @Override
     protected CodeGenerationRequest.CodeGeneratorCallback getCodeGenerationCallback() {
-       /* String s = mCodeGeneratorCallback.toString();
+       String s = mCodeGeneratorCallback.toString();
         try {
             SaveGeneratdeCode(s);
         }
         catch (IOException e){
             e.printStackTrace();
-        }*/
+        }
         return mCodeGeneratorCallback;
     }
 
