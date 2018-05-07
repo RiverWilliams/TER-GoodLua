@@ -1,6 +1,5 @@
 package ter.com.testblocky;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.google.blockly.android.AbstractBlocklyActivity;
@@ -9,13 +8,11 @@ import com.google.blockly.android.codegen.LanguageDefinition;
 import com.google.blockly.android.codegen.LoggingCodeGeneratorCallback;
 import com.google.blockly.model.DefaultBlocks;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+
 
 public class MyBlockyActivity extends AbstractBlocklyActivity {
 
@@ -26,19 +23,22 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
 
 
     @Override
+
     protected String getToolboxContentsXmlPath() {
-        return "default/toolbox.xml";
+        return "lua/toolbox.xml";
     }
+
+    private static final List<String> BLOCK_DEFINITIONS = Arrays.asList(
+            "lua/allumer_led.json"
+    );
 
     @Override
     protected List<String> getBlockDefinitionsJsonPaths() {
-        List<String> assetPaths = new ArrayList<>(DefaultBlocks.getAllBlockDefinitions());
-        // Append your own block definitions here.
-        return assetPaths;
+        return BLOCK_DEFINITIONS;
     }
 
     private static final List<String> LUA_GENERATORS = Arrays.asList(
-            // Custom block generators go here. Default blocks are already included.
+            "lua/allumer_led.js"
     );
 
     @Override
@@ -49,23 +49,16 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
     CodeGenerationRequest.CodeGeneratorCallback mCodeGeneratorCallback =
             new LoggingCodeGeneratorCallback(this, "LoggingTag");
 
-    void SaveGeneratdeCode(String code) throws IOException {
-        FileOutputStream out = openFileOutput("test.txt",MODE_APPEND);
-        OutputStreamWriter osw = new OutputStreamWriter(out);
-        osw.write(code);
-        osw.flush();
-        osw.close();
-    }
 
     @Override
     protected CodeGenerationRequest.CodeGeneratorCallback getCodeGenerationCallback() {
-       String s = mCodeGeneratorCallback.toString();
+       /* String s = mCodeGeneratorCallback.toString();
         try {
             SaveGeneratdeCode(s);
         }
         catch (IOException e){
             e.printStackTrace();
-        }
+        }*/
         return mCodeGeneratorCallback;
     }
 
@@ -80,7 +73,43 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
         return new LanguageDefinition("lua/lua_compressed.js", "Blockly.Lua");
     }
 
+/* void SaveGeneratdeCode(String code) throws IOException {
+        FileOutputStream out = openFileOutput("test.lua",MODE_APPEND);
+        OutputStreamWriter osw = new OutputStreamWriter(out);
+        osw.write(code.getBytes);
+        osw.flush();
+        osw.close();
+        File path = this.getFilesDir();
+        System.out.println(path.toString());
+        String chemin = path.toString();
+        try {
+            FileInputStream in = openFileInput("test.lua");
+            InputStreamReader isr = new InputStreamReader(in);
+            char [] buffer = new char[2000];
+            isr.read(buffer);
+            String code2 = new String(buffer);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    void verifFichier(File path) {
+        String chemin = path.toString();
+        try {
+            FileInputStream in = openFileInput("test.txt");
+            InputStreamReader isr = new InputStreamReader(in);
+            char [] buffer = new char[2000];
+            isr.read(buffer);
+            String code = new String(buffer);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }*/
 
 
 }

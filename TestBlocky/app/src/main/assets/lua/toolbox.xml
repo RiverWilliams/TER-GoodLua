@@ -1,0 +1,9 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="LED" colour="#5ba56d">
+    <block type="allumer_led"></block>
+    <block type="pin">
+      <field name="num_pin">0</field>
+      <field name="valeur_pin">0</field>
+    </block>
+  </category>
+</xml>

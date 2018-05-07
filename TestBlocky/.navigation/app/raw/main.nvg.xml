@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ter.com.testblocky.FirstActivity"/>
+      <point      
+        x = "1744"      
+        y = "84"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ter.com.testblocky.ProgramLoadedActivity"/>
+      <point      
+        x = "2656"      
+        y = "16"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ter.com.testblocky.NewProgActivity"/>
+      <point      
+        x = "2568"      
+        y = "4"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ter.com.testblocky.MyBlockyActivity"/>
+      <point      
+        x = "1016"      
+        y = "152"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
