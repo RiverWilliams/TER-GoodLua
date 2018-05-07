@@ -6,4 +6,9 @@
       <field name="valeur_pin">0</field>
     </block>
   </category>
+  <category name="Moteurs" colour="#a5a55b">
+    <block type="allumer_moteur"></block>
+    <block type="avancer"></block>
+    <block type="reculer"></block>
+  </category>
 </xml>

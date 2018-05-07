@@ -6,9 +6,7 @@ import com.google.blockly.android.AbstractBlocklyActivity;
 import com.google.blockly.android.codegen.CodeGenerationRequest;
 import com.google.blockly.android.codegen.LanguageDefinition;
 import com.google.blockly.android.codegen.LoggingCodeGeneratorCallback;
-import com.google.blockly.model.DefaultBlocks;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +17,7 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
 
@@ -29,7 +28,7 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
     }
 
     private static final List<String> BLOCK_DEFINITIONS = Arrays.asList(
-            "lua/allumer_led.json"
+            "lua/blocks.json"
     );
 
     @Override
@@ -38,7 +37,7 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
     }
 
     private static final List<String> LUA_GENERATORS = Arrays.asList(
-            "lua/allumer_led.js"
+            "lua/blocks.js"
     );
 
     @Override

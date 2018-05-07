@@ -1,0 +1,105 @@
+[{
+  "type": "allumer_led",
+  "message0": "allumer LED %1 rouge %2 vert %3 bleu %4",
+  "args0": [
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "red",
+      "check": "pin",
+      "align": "RIGHT"
+    },
+    {
+      "type": "input_value",
+      "name": "green",
+      "check": "pin",
+      "align": "RIGHT"
+    },
+    {
+      "type": "input_value",
+      "name": "blue",
+      "check": "pin",
+      "align": "RIGHT"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "pin",
+  "message0": "pin %1 %2 valeur %3",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "num_pin",
+      "value": 0,
+      "min": 0,
+      "max": 18
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "field_number",
+      "name": "valeur_pin",
+      "value": 0,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "inputsInline": true,
+  "output": null,
+  "colour": 345,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "allumer_moteur",
+  "message0": "allumer moteur %1 roue n° %2 puissance %3",
+  "args0": [
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "numRoue",
+      "check": "Number",
+      "align": "RIGHT"
+    },
+    {
+      "type": "input_value",
+      "name": "puissanceRoue",
+      "check": "Number",
+      "align": "RIGHT"
+    }
+  ],
+  "inputsInline": false,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 345,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "avancer",
+  "message0": "Avancer",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "reculer",
+  "message0": "Reculer",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+}]
