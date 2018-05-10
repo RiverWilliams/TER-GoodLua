@@ -59,7 +59,9 @@ public class ProgramLoadedActivity extends Activity {
 
         final Button buttonExec = (Button) findViewById(R.id.executer);
         buttonExec.setOnClickListener(new View.OnClickListener() {
-
+            /**
+            * Active le bluetooth, repère les appareils à proximité, et envoie un fichier au robot
+            */
             @Override
             public void onClick(View view) {
                 bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -77,17 +79,7 @@ public class ProgramLoadedActivity extends Activity {
                 Set<BluetoothDevice> devices;
                 devices = bluetoothAdapter.getBondedDevices();
                 for (BluetoothDevice blueDevice : devices) {
-                    //Toast.makeText(ProgramLoadedActivity.this, "Device = " + blueDevice.getName(), Toast.LENGTH_SHORT).show();
-                    if(blueDevice.getName().equals("pcduino3")){
-                        /*
-                        File file = new File(getApplicationContext().getFilesDir(),"codeTablette.txt");
-                        System.out.println("path="+file.getPath()+"name="+file.getName());
-                        System.out.println("can read="+file.canRead()+"can write="+file.canWrite());
-                        file.setExecutable(true);
-                        file.setReadable(true);
-                        file.setWritable(true);
-                        sendFileToDevice(blueDevice,file);
-                        */
+                     if(blueDevice.getName().equals("pcduino3")){
                         File file2 = new File("/storage/emulated/0/bluetooth/codeTablette.txt");
                         sendFileToDevice(blueDevice,file2);
 
@@ -99,6 +91,11 @@ public class ProgramLoadedActivity extends Activity {
         });
     }
 
+    /**
+    * Envoie un fichier à un appareil ciblé
+    * @param device appareil ciblé
+    * @param file le fichier envoyé
+    */
     public void sendFileToDevice(BluetoothDevice device,File file){
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);

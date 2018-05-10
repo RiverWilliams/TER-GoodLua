@@ -1,26 +1,18 @@
 package ter.com.testblocky;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.google.blockly.android.AbstractBlocklyActivity;
 import com.google.blockly.android.codegen.CodeGenerationRequest;
 import com.google.blockly.android.codegen.LanguageDefinition;
-import com.google.blockly.android.codegen.LoggingCodeGeneratorCallback;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+
 import java.util.Arrays;
 import java.util.List;
-
-import static android.content.Context.MODE_APPEND;
-
 
 public class MyBlockyActivity extends AbstractBlocklyActivity {
 
@@ -30,9 +22,10 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
 
     }
 
-
+    /**
+    * Charge la toolbox personnalisée
+    */
     @Override
-
     protected String getToolboxContentsXmlPath() {
         return "lua/toolbox.xml";
     }
@@ -41,6 +34,9 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
             "lua/blocks.json"
     );
 
+    /**
+    * Charge la définition des blocs personnalisés
+    */
     @Override
     protected List<String> getBlockDefinitionsJsonPaths() {
         return BLOCK_DEFINITIONS;
@@ -50,15 +46,21 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
             "lua/blocks.js"
     );
 
+    /**
+    * Charge le code des blocs personnalisés
+    */
     @Override
     protected List<String> getGeneratorsJsPaths() {
-        return LUA_GENERATORS;
+            return LUA_GENERATORS;
     }
 
+    /**
+    * Génère le code des blocs et l'enregistre dans un fichier
+    */
     CodeGenerationRequest.CodeGeneratorCallback mCodeGeneratorCallback = new CodeGenerationRequest.CodeGeneratorCallback(){
         @Override
         public void onFinishCodeGeneration(String code){
-            System.out.println("Le code");
+            System.out.println("Le code ");
             System.out.println(code);
             try {
                 SaveGeneratdeCode(code);
@@ -68,26 +70,35 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
             }
         }
     };
-            //new LoggingCodeGeneratorCallback(this, "LoggingTag");
 
-
+    /**
+    * Génère le code pour l'afficher dans l'application
+    */
     @Override
     protected CodeGenerationRequest.CodeGeneratorCallback getCodeGenerationCallback() {
-
         return mCodeGeneratorCallback;
     }
 
+    /**
+    * Initialisation des variables
+    */
     @Override
     protected void onInitBlankWorkspace() {
-        // Initialize available variable names.
         getController().addVariable("item");
     }
 
-    //@Override
+    /**
+    * Définit le langage utilisé
+    */
+    @Override
    protected LanguageDefinition getBlockGeneratorLanguage() {
         return new LanguageDefinition("lua/lua_compressed.js", "Blockly.Lua");
     }
 
+    /**
+    * Enregistre le code dans un fichier
+    * @param code le code lua/ino à enregistrer
+    */
  void SaveGeneratdeCode(String code) throws IOException {
 
         System.out.println("code"+code);
@@ -101,59 +112,6 @@ public class MyBlockyActivity extends AbstractBlocklyActivity {
         fos.flush();
         fos.close();
 
-        /*
-        FileOutputStream fileOutputStream = new FileOutputStream(file);
-        OutputStreamWriter osw = new OutputStreamWriter(fileOutputStream);
-        osw.write(code);
-
-
-        Toast.makeText(ProgramLoadedActivity.getAppContext(), file.toString(), Toast.LENGTH_SHORT).show();
-
-        osw.flush();
-        osw.close();*
-         */
-
-       /* File file = new File(ProgramLoadedActivity.getAppContext().getFilesDir(),"codeTablette.txt");
-
-        Toast.makeText(ProgramLoadedActivity.getAppContext(), "path="+file.getPath()+"name="+file.getName(), Toast.LENGTH_SHORT).show();
-
-
-     //OutputStreamWriter osw = new OutputStreamWriter(out);
-        //osw.write(code);
-     // osw.flush();
-     // osw.close();
-        /*
-        File path = this.getFilesDir();
-        System.out.println(path.toString());
-        String chemin = path.toString();
-        try {
-            FileInputStream in = openFileInput("codeTablette.txt");
-            InputStreamReader isr = new InputStreamReader(in);
-            char [] buffer = new char[2000];
-            isr.read(buffer);
-            String code2 = new String(buffer);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
     }
-
-    void verifFichier(File path) {
-        String chemin = path.toString();
-        try {
-            FileInputStream in = openFileInput("test.txt");
-            InputStreamReader isr = new InputStreamReader(in);
-            char [] buffer = new char[2000];
-            isr.read(buffer);
-            String code = new String(buffer);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
 
 }

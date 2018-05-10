@@ -1,6 +1,6 @@
 [{
   "type": "allumer_led",
-  "message0": "allumer LED %1 rouge %2 vert %3 bleu %4",
+  "message0": "allumer LED PcDuino %1 rouge %2 vert %3 bleu %4",
   "args0": [
     {
       "type": "input_dummy"
@@ -32,7 +32,7 @@
 },
 {
   "type": "pin",
-  "message0": "pin %1 %2 valeur %3",
+  "message0": "[pcDuino] pin %1 %2 valeur %3",
   "args0": [
     {
       "type": "field_number",
@@ -81,7 +81,7 @@
   "inputsInline": false,
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 345,
+  "colour": 65,
   "tooltip": "",
   "helpUrl": ""
 },
@@ -100,6 +100,215 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "initialisation",
+  "message0": "Initialiser connexion",
+  "nextStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "terminer",
+  "message0": "Fermer connexion",
+  "previousStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "allumer_led2",
+  "message0": "Allumer LED Romeo %1 Rouge %2 Vert %3 Bleu %4",
+  "args0": [
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "red2",
+      "check": "pin2",
+      "align": "RIGHT"
+    },
+    {
+      "type": "input_value",
+      "name": "green2",
+      "check": "pin2",
+      "align": "RIGHT"
+    },
+    {
+      "type": "input_value",
+      "name": "blue2",
+      "check": "pin2",
+      "align": "RIGHT"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "sleep",
+  "message0": "[pcDuino] sleep %1",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "sleeptime",
+      "value": 0,
+      "min": 0
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "pin2",
+  "message0": "[Romeo] pin %1 %2 valeur %3",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "pin_number2",
+      "value": 0,
+      "min": 0,
+      "max": 50
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "field_number",
+      "name": "pin_value2",
+      "value": 0,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "inputsInline": true,
+  "output": null,
+  "colour": 345,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "sensgpio",
+  "message0": "Mettre sens du pin  %1 à %2",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "numPin",
+      "value": 0,
+      "min": 0,
+      "max": 18
+    },
+    {
+      "type": "field_number",
+      "name": "sensPin",
+      "value": 0,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 345,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "valeurgpio",
+  "message0": "Mettre valeur du pin  %1 à %2",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "numPinvalue",
+      "value": 0,
+      "min": 0,
+      "max": 18
+    },
+    {
+      "type": "field_number",
+      "name": "valuePin",
+      "value": 0,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 345,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "delay",
+  "message0": "[Romeo] delay  %1",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "delay",
+      "value": 0,
+      "min": 0
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "loop",
+  "message0": "[pcDuino] repeat   %1 times %2 do %3",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "times",
+      "value": 0,
+      "min": 0
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_statement",
+      "name": "NAME"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "repeat2",
+  "message0": "[Romeo] repeat %1 times %2 do %3",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "times2",
+      "value": 0,
+      "min": 0
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_statement",
+      "name": "NAME"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
   "tooltip": "",
   "helpUrl": ""
 }]

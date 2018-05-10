@@ -16,17 +16,7 @@
         android:layout_marginTop="@dimen/layout_margin_top"
         android:minWidth="@dimen/layout_width"/>
 
-    <Button
-        android:id="@+id/charger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Charger"
-        android:paddingTop="@dimen/layout_padding_top"
-        android:paddingBottom="@dimen/layout_padding_bottom"
-        android:textSize="@dimen/big_text_size"
-        android:layout_marginTop="@dimen/layout_margin_top"
-        android:minWidth="@dimen/layout_width"/>
+
 
 
 </LinearLayout>
