@@ -21,6 +21,9 @@
     <block type="allumer_moteur"></block>
     <block type="avancer"></block>
     <block type="reculer"></block>
+    <block type="stoproues"></block>
+    <block type="gauche"></block>
+    <block type="droite"></block>
   </category>
   <category name="Blocs Lua" colour="#a55b5b">
     <block type="allumer_led"></block>
@@ -31,7 +34,7 @@
       <field name="num_pin">0</field>
       <field name="valeur_pin">0</field>
     </block>
-    <block type="initialisation"></block>
+    <block type="initialiser"></block>
     <block type="terminer"></block>
     <block type="sensgpio">
       <field name="numPin">0</field>
@@ -44,8 +47,13 @@
   </category>
   <category name="Blocs ino" colour="#805ba5">
     <block type="allumer_moteur"></block>
+    <block type="droite"></block>
+    <block type="gauche"></block>
     <block type="avancer"></block>
+    <block type="stoproues"></block>
     <block type="reculer"></block>
+    <block type="terminer2"></block>
+    <block type="initialiser2"></block>
     <block type="allumer_led2"></block>
     <block type="pin2">
       <field name="pin_number2">0</field>

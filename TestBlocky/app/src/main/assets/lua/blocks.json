@@ -87,7 +87,7 @@
 },
 {
   "type": "avancer",
-  "message0": "Avancer",
+  "message0": "[Romeo] Avancer",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
@@ -96,26 +96,10 @@
 },
 {
   "type": "reculer",
-  "message0": "Reculer",
+  "message0": "[Romeo] Reculer",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "initialisation",
-  "message0": "Initialiser connexion",
-  "nextStatement": null,
-  "colour": 0,
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "terminer",
-  "message0": "Fermer connexion",
-  "previousStatement": null,
-  "colour": 0,
   "tooltip": "",
   "helpUrl": ""
 },
@@ -199,7 +183,7 @@
 },
 {
   "type": "sensgpio",
-  "message0": "Mettre sens du pin  %1 à %2",
+  "message0": "[pcDuino] Mettre sens du pin  %1 à %2",
   "args0": [
     {
       "type": "field_number",
@@ -224,7 +208,7 @@
 },
 {
   "type": "valeurgpio",
-  "message0": "Mettre valeur du pin  %1 à %2",
+  "message0": "[pcDuino] Mettre valeur du pin  %1 à %2",
   "args0": [
     {
       "type": "field_number",
@@ -309,6 +293,65 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "initialiser",
+  "message0": "[pcDuino] Initialiser connexion",
+  "nextStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "terminer",
+  "message0": "[pcDuino] Fermer connexion",
+  "previousStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "initialiser2",
+  "message0": "[Romeo] Initialiser connexion",
+  "nextStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "terminer2",
+  "message0": "[Romeo] Fermer connexion",
+  "previousStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "stoproues",
+  "message0": "[Romeo] Arrêter roues",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "gauche",
+  "message0": "[Romeo] Tourner à gauche",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "droite",
+  "message0": "[Romeo] Tourner à droite",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 65,
   "tooltip": "",
   "helpUrl": ""
 }]
