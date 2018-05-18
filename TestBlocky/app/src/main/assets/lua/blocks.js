@@ -2,19 +2,15 @@ Blockly.Lua['allumer_led'] = function(block) {
   var value_red = Blockly.Lua.valueToCode(block, 'red', Blockly.Lua.ORDER_ATOMIC);
   var value_green = Blockly.Lua.valueToCode(block, 'green', Blockly.Lua.ORDER_ATOMIC);
   var value_blue = Blockly.Lua.valueToCode(block, 'blue', Blockly.Lua.ORDER_ATOMIC);
-  var code = 'nameFile = "./sh.sh"\n';
-  code += ' file = io.open(nameFile, "a")\n';
-  code += 'io.output(file)\n';
-  code += 'if ' + value_red.length + ' != 0\n';
+  var code = 'if ' + value_red.length + ' ~= 0\n';
   code += 'then\n' +  value_red + '\n';
   code += 'end\n';
-  code += 'if ' + value_green.length + ' != 0\n';
+  code += 'if ' + value_green.length + ' ~= 0\n';
   code += 'then\n' + value_green + '\n';
   code += 'end\n';
-  code += 'if ' + value_blue.length + ' != 0\n';
+  code += 'if ' + value_blue.length + ' ~= 0\n';
   code += 'then\n' + value_blue + '\n';
   code += 'end\n';
-  code += 'io.close(file)\n';
   return code;
 };
 
@@ -26,8 +22,8 @@ Blockly.Lua['pin'] = function(block) {
 };
 
 Blockly.Lua['allumer_moteur'] = function(block) {
-  var value_numroue = Blockly.Lua.valueToCode(block, 'numRoue', Blockly.Lua.ORDER_ATOMIC);
-  var value_puissanceroue = Blockly.Lua.valueToCode(block, 'puissanceRoue', Blockly.Lua.ORDER_ATOMIC);
+ var value_numroue = block.getFieldValue('numRoue');
+  var value_puissanceroue = block.getFieldValue('puissanceRoue');
   var code = 'if ' + value_numroue.length + ' != 0 && ' + value_puissanceroue.length + ' != 0 \n';
   code += 'digitalWrite(' + value_numroue + ',LOW);\n';
   code += 'pinMode(' + value_numroue + ', OUTPUT);\n';
@@ -67,21 +63,21 @@ Blockly.Lua['allumer_led2'] = function(block) {
   return code;
 };
 
-Blockly.Lua['sleep'] = function(block) {
+Blockly.Lua['sleep1'] = function(block) {
   var number_sleeptime = block.getFieldValue('sleeptime');
-  var code = 'lib.sleep(' + sleeptime + ')\n';
+  var code = 'lib.sleep(' + number_sleeptime + ')\n';
   return code;
 };
 
 Blockly.Lua['pin2'] = function(block) {
   var number_pin_number2 = block.getFieldValue('pin_number2');
   var number_pin_value2 = block.getFieldValue('pin_value2');
-  var code = 'pinMode(' + number_pin_number2 + ', OUTPUT);'\n;
-  code += 'if('+number_pin_value2 + ' == 1){\n');
+  var code = 'pinMode(' + number_pin_number2 + ', OUTPUT);\n';
+  code += 'if('+number_pin_value2 + ' == 1){ \n';
   code +=  'digitalWrite(' + number_pin_number2 + ', HIGH);\n';
   code += '}\n';
   code += 'else {\n';
-  code +=  'digitalWrite(' + number_pin_number2 + ', LOW);\n'
+  code += 'digitalWrite(' + number_pin_number2 + ', LOW);\n'
   code += '}\n';
   return [code, Blockly.Lua.ORDER_ATOMIC];
 };
@@ -108,7 +104,7 @@ Blockly.Lua['delay'] = function(block) {
 
 Blockly.Lua['loop'] = function(block) {
   var number_times = block.getFieldValue('times');
-  var statements_name = Blockly.Lua.statementToCode(block, 'NAME');
+  var statements_name = Blockly.Lua.statementToCode(block, 'statementLoop');
   var code = 'for i=1,' + number_times +' do\n';
   code += statements_name + '\n';
   code += 'end\n';
@@ -117,7 +113,7 @@ Blockly.Lua['loop'] = function(block) {
 
 Blockly.Lua['repeat2'] = function(block) {
   var number_times2 = block.getFieldValue('times2');
-  var statements_name = Blockly.Lua.statementToCode(block, 'NAME');
+  var statements_name = Blockly.Lua.statementToCode(block, 'statementRepeat');
   var code = 'for (int i=0; i <= ' + number_times2 + '; i++){\n';
   code += statements_name + '\n';
   code += '};\n';
@@ -129,7 +125,7 @@ Blockly.Lua['initialiser'] = function(block) {
   code += 'nameFile = "./sh.sh"\n';
   code += 'file = io.open(nameFile, "w")\n';
   code += 'io.output(file)\n';
-  code += 'io.write("echo 1 | sudo tee /sys/class/gpio/export\n")\n';
+  code += 'io.write("")\n';
   code += 'io.close(file)\n';
   return code;
 };
@@ -145,7 +141,7 @@ Blockly.Lua['initialiser2'] = function(block) {
   code += 'int M1 = 4;\n';    
   code += 'int M2 = 7;\n';
   code += 'void setup(void) {\n';
-  code += 'for(i=4;i<=7;i++){\n';
+  code += 'for(int i=4;i<=7;i++){\n';
   code += 'pinMode(i, OUTPUT);\n';
   code += '}\n';
   code += 'Serial.begin(19200);\n';
@@ -161,7 +157,6 @@ Blockly.Lua['terminer2'] = function(block) {
 };
 
 Blockly.Lua['stoproues'] = function(block) {
-  // TODO: Assemble Lua into code variable.
   var code = 'digitalWrite(E1,LOW);\n';
   code += 'digitalWrite(E2,LOW);\n';
   return code;

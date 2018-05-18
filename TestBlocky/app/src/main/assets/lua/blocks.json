@@ -58,33 +58,33 @@
   "tooltip": "",
   "helpUrl": ""
 },
-{
-  "type": "allumer_moteur",
-  "message0": "allumer moteur %1 roue n° %2 puissance %3",
-  "args0": [
-    {
-      "type": "input_dummy"
-    },
-    {
-      "type": "input_value",
-      "name": "numRoue",
-      "check": "Number",
-      "align": "RIGHT"
-    },
-    {
-      "type": "input_value",
-      "name": "puissanceRoue",
-      "check": "Number",
-      "align": "RIGHT"
-    }
-  ],
-  "inputsInline": false,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": 65,
-  "tooltip": "",
-  "helpUrl": ""
-},
+  {
+    "type": "allumer_moteur",
+    "message0": "[Romeo] allumer moteur %1 pin roue n° %2 puissance %3",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "field_number",
+        "name": "numRoue",
+        "value": 0,
+        "min": 0
+      },
+      {
+        "type": "field_number",
+        "name": "puissanceRoue",
+        "value": 0,
+        "min": 0
+      }
+    ],
+    "inputsInline": false,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 65,
+    "tooltip": "",
+    "helpUrl": ""
+  },
 {
   "type": "avancer",
   "message0": "[Romeo] Avancer",
@@ -136,7 +136,7 @@
   "helpUrl": ""
 },
 {
-  "type": "sleep",
+  "type": "sleep1",
   "message0": "[pcDuino] sleep %1",
   "args0": [
     {
@@ -263,7 +263,7 @@
     },
     {
       "type": "input_statement",
-      "name": "NAME"
+      "name": "statementLoop"
     }
   ],
   "previousStatement": null,
@@ -287,7 +287,7 @@
     },
     {
       "type": "input_statement",
-      "name": "NAME"
+      "name": "statementRepeat"
     }
   ],
   "previousStatement": null,

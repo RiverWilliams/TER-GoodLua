@@ -10,7 +10,7 @@
       <field name="num_pin">0</field>
       <field name="valeur_pin">0</field>
     </block>
-    <block type="sleep">
+    <block type="sleep1">
       <field name="sleeptime">0</field>
     </block>
     <block type="delay">
@@ -27,7 +27,7 @@
   </category>
   <category name="Blocs Lua" colour="#a55b5b">
     <block type="allumer_led"></block>
-    <block type="sleep">
+    <block type="sleep1">
       <field name="sleeptime">0</field>
     </block>
     <block type="pin">
