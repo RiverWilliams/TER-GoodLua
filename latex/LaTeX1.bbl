@@ -129,4 +129,15 @@ Doillon Lhost~Rapin Fabre~Chapuis.
 \newblock {\em Le guide de Lua et ses applications}.
 \newblock D-Booker, 2016.
 
+\bibitem{ref26}
+wikipedia.
+\newblock General purpose input/output, jun 2017.
+\newblock https://fr.wikipedia.org/wiki/General\_Purpose\_Input/Output.
+
+\bibitem{ref25}
+Google.
+\newblock Blockly developper tools.
+\newblock
+  https://blockly-demo.appspot.com/static/demos/blockfactory/index.html.
+
 \end{thebibliography}
