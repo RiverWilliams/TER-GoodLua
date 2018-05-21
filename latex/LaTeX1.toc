@@ -1,0 +1,23 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Partie documentaire}{3}
+\contentsline {section}{R\IeC {\'e}sum\IeC {\'e} du projet}{3}
+\contentsline {section}{Introduction au domaine}{4}
+\contentsline {section}{Analyse de l'existant}{8}
+\contentsline {chapter}{Cahier des charges}{11}
+\contentsline {section}{Besoins fonctionnels}{11}
+\contentsline {section}{Besoins non fonctionnels}{12}
+\contentsline {section}{Prototype - l'interface de l'application Andro\IeC {\"\i }d}{13}
+\contentsline {chapter}{Architecture}{16}
+\contentsline {chapter}{Fonctionnement du syst\IeC {\`e}me}{17}
+\contentsline {section}{Exemples de fonctionnement}{17}
+\contentsline {section}{Tests de validation}{19}
+\contentsline {chapter}{Partie technique}{20}
+\contentsline {section}{Description technique}{20}
+\contentsline {section}{Limites du projet}{21}
+\contentsline {section}{Justification des algorithmes}{22}
+\contentsline {section}{Analyse en complexit\IeC {\'e}}{22}
+\contentsline {section}{Emprunte \IeC {\'e}nerg\IeC {\'e}tique}{23}
+\contentsline {section}{Extensions possibles}{24}
+\contentsline {chapter}{Bibliographie}{27}
+\contentsline {chapter}{Annexes}{28}
+\contentsline {section}{Manuel d'utilisation}{28}

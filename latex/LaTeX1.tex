@@ -41,10 +41,22 @@
 		\begin{center}
     {7 Février 2018 - 25 Mai 2018}
 		\end{center}
+		
+
 	
+		
+		
+\tableofcontents
+
+
+		
 \chapter*{Partie documentaire}	
 
+\addcontentsline{toc}{chapter}{Partie documentaire}
+
 \section*{Résumé du projet}	
+
+\addcontentsline{toc}{section}{Résumé du projet}
 
 L’objet du projet est la conception d'un système pour la création et le lancement à distance de programme Lua s'exécutant sur un robot. Le système matériel est composé d'une tablette Androïd et d'un robot mobile à base pcDuino équipé de divers capteurs. Le logiciel de la tablette offrira la possibilité : 
 \begin{itemize}
@@ -56,6 +68,7 @@ Le système logiciel sur le robot permettra de recevoir et d'exécuter les progr
 		
 \newpage 
 \section*{Introduction au domaine}
+\addcontentsline{toc}{section}{Introduction au domaine}
 
 \paragraph*{Quelles sont les possibilités de Blockly ?\\}
 
@@ -121,9 +134,10 @@ Les champs des utilisations d'arduino étant très vaste, l'imagination de sa co
 
 \newpage
 \section*{Analyse de l'existant}
+\addcontentsline{toc}{section}{Analyse de l'existant}
 
 Nous avons reçu pour ce projet, un kit matériel qui forme le robot.\\
-Pour nous aider à découvrir son utilisation, nous avons étudié le projet d'algorithmique répartie des étudiants de la promotion 2015 des master 1 informatique \cite{ref1} dans lequel ils manipulent un robot semblable au notre, mais avec des des langages différent du notre (Lua) puisqu'ils l'ont contrôlé avec du python et du C++.
+Pour nous aider à découvrir son utilisation, nous avons étudié le projet d'algorithmique répartie des étudiants de la promotion 2015 des master 1 informatique \cite{ref1} dans lequel ils manipulent un robot semblable au notre, mais avec des des langages différent du notre (Lua) puisqu'ils l'ont contrôlé avec du Python et du C++.
 
 \begin{figure}[!h]
 \includegraphics[scale=0.4]{./images/notre_materiel.jpg}~\
@@ -134,12 +148,12 @@ Voici la liste du matériel dont nous disposons et dont nous devrons nous servir
 
 \begin{description}
 \item [Le pcDuino :] La carte pcDuino V3 est un mini PC possédant un processeur dual core A20. Une fois branchée à un écran, un clavier et une souris, grâce à son port USB, elle s'utilise de la même manière qu'un PC sous une distribution Ubuntu. Elle possède un lecteur de carte micro-sd,  c'est dans cette carte que se situe le système d'exploitation du pcDuino. Le pcDuino possède également un port ethernet ainsi qu'une carte wifi, ce qui permet de se connecter à un réseau facilement. Pour le faire fonctionner, il suffit de le brancher à un chargeur USB par son port micro USB. Il possède enfin des broches arduino, en plus de ses interfaces de communication, permettant de faire de la programmation arduino.\cite{ref3}
-\item [L'arduino :] L'arduino Romeo V2.2 (R3) \cite{ref4} est un micro-contrôleur tout en un spécialement créé pour la robotique, qui fournit des interfaces de puissance pour contrôler des moteurs.
+\item [L'arduino :] L'arduino Romeo V2.2 (R3) \cite{ref4} est un micro-contrôleur tout-en-un spécialement créé pour la robotique, qui fournit des interfaces de puissance pour contrôler des moteurs.
 \item [La plateforme mobile :] Notre robot est composé d'une châssis Baron - 4WD auquel sont associés 4 moteurs reliés à 4 roues codeuses. \cite{ref5}
 \item [La LED :] Le disque contient 7 LEDs RGB \cite{ref6}, que l'ont peut allumer grâce à 3 pins, un pour chaque couleur, ainsi qu'avec un pin d'alimentation.
 \item [Les capteurs infrarouges :] Les 3 capteurs possèdent une LED qui s'allume si un objet est dans le champ de détection. Ils ont une sortie binaire, selon si un obstacle est détecté ou non. Leur distance de détection peut être de 3 à 80 cm, et se règle manuellement avant l'utilisation. \cite{ref7}
 \item [Le capteur ultrasons :] Lié à l'arduino, il détecte des températures allant de -10 à environ 70 degrés celsius, à une distance de 4cm, jusqu'à 5m. \cite{ref8}
-\item [La clé bluetooth :] Nous avons rajouté une clé bluetooth au robot, branché sur un hub USB, qui permettra la communication avec d'autre appareils.
+\item [La clé bluetooth :] Nous avons rajouté une clé bluetooth au robot, branché sur un hub USB, qui permettra la communication avec d'autres appareils.
 \end{description}
 
 \bigskip
@@ -148,9 +162,12 @@ Voici la liste du matériel dont nous disposons et dont nous devrons nous servir
 Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de notre choix, correspondant à des fonctions à appliquer sur le robot, d'intégrer l'éditeur Blockly à notre application Androïd, et de générer le code à exécuter.
 \end{description}
 
+
 \chapter*{Cahier des charges}
+\addcontentsline{toc}{chapter}{Cahier des charges}
 
 \section*{Besoins fonctionnels}
+\addcontentsline{toc}{section}{Besoins fonctionnels}
 
 \begin{itemize}[label=\textbullet]
 	\item \textbf{Exécuter du code}
@@ -191,6 +208,7 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 \bigskip
 
 \section*{Besoins non fonctionnels}
+\addcontentsline{toc}{section}{Besoins non fonctionnels}
 
 \begin{description}
 	\item [Environnement de travail :]Nous travaillons sous une distribution Ubuntu. Pour la partie programmation en Lua\cite{refLua} il est possible d'utiliser n'importe quel éditeur de texte, puis de compiler le fichier. Pour la programmation en langage Arduino, nous pouvons utiliser l'Arduino IDE ou compiler et exécuter en lignes de commandes.
@@ -201,6 +219,7 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 \end{description}
 
 \section*{Prototype - l'interface de l'application Androïd }
+\addcontentsline{toc}{section}{Prototype - l'interface de l'application Androïd}
 En ouvrant l'application, l'utilisateur se verra proposer de créer un nouveau programme, il devra alors lui donner un nom. Une fois le programme créé, il aura le choix de le modifier ou de l'exécuter. [Figure 1]
 
 Dans le cas du choix de modifier le code, on ouvrira l'éditeur visuel contenant Blockly avec l'ensemble des blocs disponibles dans une barre latérale gauche. Un menu permettra également de sauvegarder le programme en cours d'édition, de charger le dernier programme enregistré ou de l'effacer. [Figure \ref{figMaquette}]\\
@@ -223,25 +242,28 @@ Dans le cas du choix de modifier le code, on ouvrira l'éditeur visuel contenant
 
 
 \chapter*{Architecture}
+\addcontentsline{toc}{chapter}{Architecture}
 
 \begin{figure}[!h]
-\begin{addmargin}[-4em]{1em}
-\includegraphics[scale=1.05]{./images/uml.jpg}~\\[1.5cm]
+\begin{addmargin}[-10em]{1em}
+\includegraphics[scale=0.95]{./images/uml2.jpg}~\\[1.5cm]
 \caption{Architecture de l'application}
 \end{addmargin}
 \end{figure}
 
 \newpage
 \chapter*{Fonctionnement du système}
+\addcontentsline{toc}{chapter}{Fonctionnement du système}
 
 \section*{Exemples de fonctionnement}
+\addcontentsline{toc}{section}{Exemples de fonctionnement}
 
 Il est possible de créer deux types de programmes avec l'application, l'un concernant les blocs [pcDuino] qui seront traduits en Lua, et l'autre concernant les blocs [romeo] qui seront traduits en langage arduino.
 Voici donc deux exemples de programmes Blockly pour chacune des cartes du robot :
 
 \bigskip
 
-Le premier programme concerne le pcDuino. Chaque programme doit être encadré par les blocs d'initialisation et de fermeture, afin que le code généré soit bien structuré. On voit ensuite 3 blocs identiques, qui mettent le sens des pins 1, 2 et 3 à 1. Ces 3 blocs permettent de dire au pcDuino que les pins concernés seront en mode écriture (contrairement au mode lecture, qui peut être utilisé avec des capteurs par exemple). On rentre ensuite dans une boucle qui sera exécutée 3 fois. Dans cette boucle, on allume un par un les pins 1, 2 et 3, qui correspondent dans cet exemple à une LED RGB, ou chaque couleur correspond à un pin. On en allume donc un par seconde, puis on les éteins tous grâce à un bloc qui regroupe les pins de la LED. Et enfin on ferme le programme.
+Le premier programme concerne le pcDuino. Chaque programme doit être encadré par les blocs d'initialisation et de fermeture, afin que le code généré soit bien structuré. On voit ensuite 3 blocs identiques, qui mettent le sens des pins 1, 2 et 3 à 1. Ces 3 blocs permettent de dire au pcDuino que les pins concernés seront en mode écriture (contrairement au mode lecture, qui peut être utilisé avec des capteurs par exemple). On rentre ensuite dans une boucle qui sera exécutée 3 fois. Dans cette boucle, on allume un par un les pins 1, 2 et 3, qui correspondent dans cet exemple à une LED RGB, ou chaque couleur correspond à un pin. On en allume donc un par seconde, puis on les éteint tous grâce à un bloc qui regroupe les pins de la LED. Et enfin on ferme le programme.
 
 \begin{figure}[!h]
 \begin{addmargin}[-5.5em]{1em}
@@ -257,6 +279,7 @@ Le second exemple concerne la Romeo, et plus précisément ses moteurs. Comme po
 Ensuite quelque soit le type de programme en appuyant sur exécuter, le fichier généré sera envoyé par bluetooth au robot qui va l'exécuter.
 
 \section*{Tests de validation}
+\addcontentsline{toc}{section}{Tests de validation}
 
 Tous les tests de validation de l'application, comme du robot ont été faits à la main, car il n'est pas possible de faire de fonctions JUnit sur l'application du fait que la génération comme l'envoi du code nécessites une intervention humaine.
 
@@ -273,45 +296,77 @@ Nous avons également testé la partie du script qui compile et exécute les pro
 
 \paragraph*{Les tests de communication\\}
 
-La communication a été testée en 3 parties. La première a été d'envoyer des fichiers en bluetooth à d'autres appareils depuis l'application et de vérifier la réception et l'intégrité des données à l'arrivée. La seconde partie a été de lancer le script du pcDuino qui permet de recevoir des fichiers via bluetooth, et d'envoyer des fichiers de code depuis d'autres appareils pour vérifier qu'il recevait bien les fichiers et les exécutait immédiatement. Enfin nous avons fait des tests en conditions réels, c'est à dire en envoyant les fichiers générés par l'application grâce au bouton 'Exécuter', et en vérifiant que le robot effectuait bien la séquence d'instructions que nous avions écrit.
+La communication a été testée en 3 parties. La première a été d'envoyer des fichiers en bluetooth à d'autres appareils depuis l'application et de vérifier la réception et l'intégrité des données à l'arrivée. La seconde partie a été de lancer le script du pcDuino qui permet de recevoir des fichiers via bluetooth, et d'envoyer des fichiers de code depuis d'autres appareils pour vérifier qu'il recevait bien les fichiers et les exécutait immédiatement. Enfin nous avons fait des tests en conditions réelles, c'est à dire en envoyant les fichiers générés par l'application grâce au bouton 'Exécuter', et en vérifiant que le robot effectuait bien la séquence d'instructions que nous avions écrit.
 
 \chapter*{Partie technique}
-
+\addcontentsline{toc}{chapter}{Partie technique}
 \section*{Description technique}
+\addcontentsline{toc}{section}{Description technique}
 
 \begin{description}
-\item [Le pcDuino :] Le système d'exploitation du PcDuino est un Armbian basé sur la version 16 d'Ubuntu. Nous lui avons ajouté une clef Bluetooth ainsi que les commandes nécessaires à la réception des fichier envoyés par la tablette. De nombreux paquets ont été installés,notamment pour permettre la compilation et l'exécution de Lua, le téléversage vers la Romeo en lignes de commandes et l'utilisation du Bluetooth. 
-Peu de code est stocké sur le pcDuino, seuls le script shell qui permet de recevoir des fichier via le bluetooth et de les compiler puis de les exécuter,ainsi que la librairie Lua sont nécessaires sur cette carte. Le reste de la configuration à été faite en ligne de commandes, ou dans des fichiers paramètres et n'a plus besoin d'être modifiée.
+\item [Le pcDuino :] Le système d'exploitation du PcDuino est un Armbian basé sur la version 16 d'Ubuntu. Nous lui avons ajouté une clef Bluetooth ainsi que les commandes nécessaires à la réception des fichiers envoyés par la tablette. De nombreux paquets ont été installés, notamment pour permettre la compilation et l'exécution de Lua, le téléversage vers la Romeo en lignes de commandes et l'utilisation du Bluetooth. 
+Peu de code est stocké sur le pcDuino, seuls le script shell qui permet de recevoir des fichier via le bluetooth et de les compiler puis de les exécuter, ainsi que la librairie Lua sont nécessaires sur cette carte. Le reste de la configuration à été faite en lignes de commandes, ou dans des fichiers paramètres et n'a plus besoin d'être modifiée.
 Le mot de passe de tous les utilisateurs du pcDuino (même root) est "ubuntu1234".
 Pour modifier les valeurs des pins afin d'allumer ou éteindre les appareils branchés, il faut écrire dans des fichiers GPIO (Global Purpose Input Output)\cite{ref26} situés dans le système, et leur donner une valeur 1 pour les allumer, ou 0 pour les éteindre.
 
 \item [L'application Android :] L'application android tourne sur notre tablette avec le sdk 22. 
-Tous les fichiers contenant la description des blocs blockly, leur code, et la toolbox qui va avec se trouvent dans le dossier /assets/lua/ de l'application. Lors du lancement de l'application ils sont interprétés et affichés dans la page d'édition de programme. Une bibliothèque intégrés d'android permet à l'application de transmettre des fichiers par bluetooth au pcDuino.
-Un générateur intégré à la bibliothèque blockly, ainsi que le code des blocks que nous avons créé, permettent de traduire le programme fait de blocs en un fichier de code Lua ou Arduino.
+Tous les fichiers contenant la description des blocs blockly, leur code, et la toolbox qui va avec se trouvent dans le dossier /assets/lua/ de l'application. Lors du lancement de l'application ils sont interprétés et affichés dans la page d'édition de programme. Une bibliothèque intégrée d'android permet à l'application de transmettre des fichiers par bluetooth au pcDuino.
+Un générateur intégré à la bibliothèque blockly, ainsi que le code des blocks que nous avons créés, permettent de traduire le programme fait de blocs en un fichier de code Lua ou Arduino.
 
 \item [Blockly :] Tous les blocks présents dans l'application ont été créés par notre groupe grâce à un outil Blockly en ligne prévu à cet effet, qui s'appelle "Blockly Developper Tools"\cite{ref25}. Cela nous a permis de choisir la forme du bloc, sa couleur, ses attributs, ses paramètres, les autres blocs qu'il accepte, etc. Ce même outil a permis de créer la toolbox personnalisée, dans laquelle on a regroupé les blocs par catégories. Enfin, le code correspondant a été écrit à la main, après que les fichiers aient été exportés. Tous ces fichiers sont ensuite passés à l'application android pour qu'elle les interprète.
 
-\item [La Romeo :] La carte ne fait que recevoir et exécuter les programmes arduino qui sont téléversés depuis le pcDuino. Les moteurs contrôlant les roues du robot sont déjà branchées sur des pins spécifiques de la Romeo, et les autres pins sont libres afin d'y brancher n'importe quel appareil.
+\item [La Romeo :] La carte ne fait que recevoir et exécuter les programmes arduino qui sont téléversés depuis le pcDuino. Les moteurs contrôlant les roues du robot sont déjà branchés sur des pins spécifiques de la Romeo, et les autres pins sont libres afin d'y brancher n'importe quel appareil.
 
 \end{description}
 
 \section*{Limites du projet}
+\addcontentsline{toc}{section}{Limites du projet}
 
 
 
 Lors de ce projet nous avons rencontré un certain nombre de problèmes qui ont freiné notre avancée, ou à cause desquels nous avons dû revoir certains objectifs :
 \begin{itemize}
-	\item Peut de temps après le choix de notre sujet nous avons dû changer d'enseignant, ce qui a entrainé un ralentissement dans notre rythme le temps que le nouveau responsable de notre groupe prenne connaissance du sujet.
-	\item Nous avons aussi rencontré des problèmes matériels comme l'incapacité de pouvoir recharger les batteries des moteurs suite à l'absence d'une pièce. A l'heure actuelle, nous n'avons toujours pas de moyens de recharger les moteurs, mais nous avons réussi à obtenir une batterie de secours dans les derniers jours du projet, ce qui nous a laissé peu de temps pour tester nos blocs concernant les moteurs des roues. 
-	\item Le pcduino étant relativement ancien les OS ne sont plus compatibles avec lui, nous en avions installé un qui était compatible avec les GPIO mais qui nous a empêché d'établir des connexions Wi-fi et bluetooth, car les paquets nécessaires n'étaient pas installés et ne pouvaient pas l'être. Nous avons donc dû chercher un OS plus récent, mais moins compatible avec le pcDuino. Nous avons finalement trouvé une version d'Armbian basée sur Ubuntu 16, qui supporte le bluetooth. En revanche cet OS a compliqué l'accès aux GPIO du pcDuino, et nous avons donc dû refaire notre librairie Lua.
+	\item Peut de temps après le choix de notre sujet nous avons dû changer d'enseignant, ce qui a entrainé un ralentissement dans notre rythme, le temps que le nouveau responsable de notre groupe prenne connaissance du sujet.
+	\item Nous avons aussi rencontré des problèmes matériels comme l'incapacité de pouvoir recharger les batteries des moteurs suite à l'absence d'une pièce. A l'heure actuelle, nous n'avons toujours pas de moyen de recharger la batterie des moteurs, mais nous avons réussi à obtenir une batterie de secours dans les derniers jours du projet, ce qui nous a laissé peu de temps pour tester nos blocs concernant les moteurs des roues. 
+	\item Le pcduino étant relativement ancien, les OS ne sont plus compatibles avec lui, nous en avions installé un qui était compatible avec les GPIO mais qui nous a empêché d'établir des connexions Wi-fi et bluetooth, car les paquets nécessaires n'étaient pas installés et ne pouvaient pas l'être. Nous avons donc dû chercher un OS plus récent, mais moins compatible avec le pcDuino. Nous avons finalement trouvé une version d'Armbian basée sur Ubuntu 16, qui supporte le bluetooth. En revanche cet OS a compliqué l'accès aux GPIO du pcDuino, et nous avons donc dû refaire notre librairie Lua.
 	\item La dernière difficulté que nous avons rencontré est une incompatibilité entre le sujet et le matériel qui nous a été fourni, car le contrôle de la Romeo devait se faire en Lua mais la carte ne l'accepte pas, elle ne peut être contrôlée que par du langage Arduino. Nous avons donc dû dupliquer tous nos blocs afin de les traduire également en langage Arduino, pour pouvoir ensuite les exécuter sur la Romeo.	
 \end{itemize}
 
 \section*{Justification des algorithmes}
+\addcontentsline{toc}{section}{Justification des algorithmes}
+
+Les langages utilisés, Lua et Arduino ont été choisis car ils permettent respectivement d'utiliser les GPIO du pcDuino, et ceux du micro-contrôleur Romeo, en y accédant assez aisément via quelques lignes de code.
+
+Chaque bloc a sa spécificité et est nécessaire à la création de n'importe quel programme Blockly.
+
+\bigskip
+Nous allons donc nous intéresser plus particulièrement à la justification des algorithmes composant le code de l'application Androïd.
+Les fonctions permettant d'utiliser le bluetooth sont nécessaires, car elles permettent de détecter les appareils à proximité, de s'y connecter et d'envoyer le fichier de code. Les fonctions qui touchent à Blockly sont surtout des fonctions de lecture. En effet, en lisant des fichiers javaScript et Json, elles créent et affichent des blocs, et les traduisent de la même manière. Ces méthodes composent la fonctionnalité principale de l'application, et l'un des points les plus importants du projet.
+
+
 
 \section*{Analyse en complexité}
+\addcontentsline{toc}{section}{Analyse en complexité}
+
+Le projet contient 3 types d'algorithmes, celui du script du pcDuino, ceux des blocs Lua et Arduino, et de la libraire Lua, et enfin ceux de l'application Androïd.
+
+Concernant l'application et le script, il n'est pas vraiment nécessaire de faire d'analyse en complexité, puisque le script est un algorithme simple répété en boucle qui cherche à recevoir tout fichier bluetooth qui lui serait envoyé. L'application s'exécute également en boucle, afin de mettre à jour ses données dès qu'un bloc est glissé sur l'écran ou supprimé. La boucle s'interrompt lorsque l'application est fermée.
+
+\bigskip
+La librairie Lua est composée de 3 fonctions : sensGPIO, valeurGPIO et sleep. Chacune d'elles a une complexité de O(1), puisqu'elles ne font qu'ouvrir un fichier, écrire le paramètre passé, et fermer le fichier.
+Le code de la plupart des blocs que nous avons crée a également une complexité de O(1), c'est le cas pour tous les blocs des catégories 'pins' et 'LED' qui utilisent simplement les fonctions de la librairie. Les blocs Lua en général ont  presque tous une complexité de O(1), y compris celui d'initialisation qui comme les autres ne fait qu'écrire quelques lignes de commandes dans un script. En revanche le bloc de fermeture en Lua a une complexité plus élevée, puisqu'en plus d'écrire dans le fichier, elle lance l'exécution du script. Or, ce script a la complexité du programme complet, c'est à dire la somme (voire le produit dans le cas de boucles imbriquées) des complexités des blocs composant le programme. Enfin, le bloc 'repeat' étant une boucle 'for', il a une complexité de O(n).
+
+\bigskip
+La complexité des blocs traduits en langage Arduino est assez semblable à celle des blocs Lua. Les Blocs touchants aux pins, que ce soit pour la LED ou les blocs des moteurs, ainsi que le bloc 'delay' ont une complexité en O(1), car ils envoient des instructions simples à la carte. Le bloc 'repeat' étant aussi une boucle, il s'exécute en O(n).
+La principale différence avec le langage Lua, est qu'un programme en langage Arduino, une fois lancé s'exécute en boucle, car la carte qui le reçoit n'a pas de condition d'arrêt. Cette spécificité du langage fait que le programme total sera exécuté une infinité de fois, ou jusqu'à ce qu'un nouveau programme prenne sa place. C'est le rôle du bloc 'stop roues', qui met tous les pins à leur valeur basse. 
+
+\section*{Emprunte énergétique}
+\addcontentsline{toc}{section}{Emprunte énergétique}
+
+L'application étant relativement épurée et simple elle ne dispose pas d'une consommation importante, à l'exception du fait que le transfert des données entre la tablette et le robot se fait par bluetooth ce qui peut augmenter légèrement la consommation dans le cas de nombreux échanges successifs, ou de l'utilisation d'une version ancienne du bluetooth.
 
 \section*{Extensions possibles}
+\addcontentsline{toc}{section}{Extensions possibles}
 
 \begin{itemize}
 
@@ -339,7 +394,7 @@ Actuellement, les blocs de la toolbox sont ceux que nous avons définis en corre
 Pour ajouter un nouveau bloc, il faut trois éléments :
 un fichier block.json décrivant le blocs (couleur, forme, ce qu'il reçoit, etc)
 un fichier block.js contenant le code généré par le bloc
-un fichier toolbox.xml contenant les catégories auxquelles le bloc appartient
+un fichier toolbox.xml contenant les catégories auxquelles le bloc appartient.
 
 Un outil pourrait être développé pour faciliter l'ajout d'un nouveau bloc à l'application. Cet outil demanderait les emplacements des fichiers .json et .js sur la tablette et se chargerait d'ajouter leur contenu aux fichiers déjà existant contenant le reste des blocs. Par la suite, un menu déroulant permettrait de choisir les catégories auxquelles le nouveau bloc appartient parmi celles déjà existantes. Il serait aussi possible de créer de nouvelles catégories. Cet outil permettrait également la suppression de blocs déjà existants.
 
@@ -352,13 +407,130 @@ On pourrait imaginer remplacer ce script par un programme, écrit dans un langag
 
 \end{itemize}
 
-\chapter*{Annexes}
-
-\section*{Manuel d'utilisation}
-
-
-
 \bibliographystyle{unsrt}
 \bibliography{biblio}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+
+
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexes}
+
+\section*{Manuel d'utilisation}
+\addcontentsline{toc}{section}{Manuel d'utilisation}
+
+\paragraph*{La page d'accueil de l'application\\}
+
+Cliquer sur le bouton "NOUVEAU" : Lancer la création d'un nouveau programme. Pour charger un programme il faut également passer par cette étape, car le programme n'est pas enregistré par son nom, mais par son code.
+
+\paragraph*{Créer un nouveau programme\\}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.15]{./images/new.png}~\\[1.5cm]
+\caption{Page d'accueil}
+\end{figure}
+
+Saisir le texte : Donner un nom au programme.\\
+Cliquer sur le bouton "VALIDER" : Valider le nom donné au programme.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.2]{./images/newProg.png}~\\[1.5cm]
+\caption{Création d'un programme}
+\end{figure}
+
+\paragraph*{Actions sur le programme\\}
+\medskip
+
+Cliquer sur le bouton "MODIFIER" : Modifier le programme nouvellement créé. Cette action lancera l'éditeur de programmes Blockly.\\
+Cliquer sur le bouton "EXECUTER" : Exécuter le programme actuellement chargé dans l'éditeur Blockly sur le robot. L'envoi vers le robot utilise le Bluetooth. L'application demandera donc sur quel appareil Bluetooth envoyer le programme. Sélectionner "pcDuino3". L'application notifiera le bon envoi du fichier.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.2]{./images/charge.png}~\\[1.5cm]
+\caption{Actions possibles sur le programme}
+\end{figure}
+
+\paragraph*{L'interface Blockly\\}
+\medskip
+
+
+Dans le groupe de boutons "1" : \\
+Cliquer sur la frise verticale l'onglet "LED" : Afficher tous les blocs nécessaires pour allumer les LED sur le pcDuino et l'Arduino.\\
+Cliquer sur la frise verticale l'onglet "Moteurs" : Afficher tous les blocs nécessaires pour utiliser les moteurs de l'Arduino.\\
+Cliquer sur la frise verticale l'onglet "Blocs Lua" : Afficher tous les blocs en LUA pour le pcDuino.\\
+Cliquer sur la frise verticale l'onglet "Blocs ino" : Afficher tous les blocs en INO pour l'Arduino.\\
+Cliquer sur la frise verticale l'onglet "Pin" : Afficher tous les blocs nécessaires pour spécifier les pins branchés sur le pcDuino et l'Arduino.\\
+Cliquer sur la frise verticale l'onglet "Loops" : Afficher le bloc nécessaire pour faire une boucle sur le pcDuino ou l'Arduino.\\
+
+
+Dans le groupe de boutons "2" :\\
+Cliquer sur le bouton (flèche bas) : Sauvegarder le workspace en local. Attention, cette sauvegarde effacera l'ancien programme enregistré.\\
+Cliquer sur le bouton (flèche haut) : Charger le dernier workspace sauvegardé en local.\\
+Cliquer sur le bouton (clear) : Effacer entièrement le programme en cours d'édition.\\
+Cliquer sur le bouton (run) : Traduire le programme formé par les blocs en un code Lua/Arduino et l'enregistrer dans un fichier.\\
+
+
+Dans le groupe de boutons "3" :\\
+Cliquer sur le bouton dans le workspace (Zoom +) : Zoomer sur le workspace. Il est également possible de zoomer en faisant glisser 2 doigts sur l'écran.\\
+Cliquer sur le bouton dans le workspace (Zoom -) : Dézoomer sur le workspace.\\
+Cliquer sur le bouton dans le workspace (Centrage) : Centre la vue du workspace sur le bloc le plus à gauche dans le workspace.\\
+Cliquer sur le bouton dans le workspace (Poubelle) : Glisser un bloc sur l'icône "Poubelle" pour supprimer ce bloc.\\
+
+\newpage
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.45]{./images/manuel1.png}~\\[1.5cm]
+\caption{L'interface Blockly}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.3]{./images/tool.png}~\\[1.5cm]
+\caption{Blocs contenus dans la section 'Moteurs'}
+\end{figure}
+
+\paragraph*{L'utilisation des blocs\\}
+\medskip
+Les blocs dans l'application peuvent se connecter de façon verticale et ou de façon horizontale : les encoches verticales "chevron" pour modifier l'état du robot et les encoches horizontales "puzzle" pour spécifier sur quel pin on modifie sa valeur. Pour les déplacer, glisser/déposer les blocs de façon à ce qu'ils s'alignent automatiquement sur leurs encoches "chevron" ou  "puzzle".\\
+
+
+Pour utiliser le robot il faut utiliser les blocs pcDuino et Arduino séparément, on ne peut coder sur les deux cartes dans les deux langages en même temps.\\
+
+
+Pour le PcDuino :
+Pour initialiser une séquence de blocs pour le pcDuino, il faut utiliser le bloc "[pcDuino] Initialiser connexion".\\
+Pour terminer la séquence de blocs pour le pcDuino, il faut utiliser le bloc "[pcDuino] Fermer connexion".\\
+Entre ces deux blocs, deux encoches "chevron" sont présentes donc on doit utiliser des blocs avec encoches "chevron".\\
+Pour utiliser les pins il faut modifier leur sens et/ou leur valeur d'entrée/sortie, à faire avec les bloc "Mettre sens du pin 0 à 0", et "Mettre valeur du pin 0 à 0".\\
+Pour allumer les leds il faut utiliser le bloc "allumer LED PcDuino", trois encoches "puzzle" sont disponibles pour chaque couleur primaire : le rouge, le vert et le bleu. Mettre un bloc avec l'encoche "puzzle" "[pcDuino] pin 0 valeur 0" sur l'une des encoches du bloc "allumer LED PcDuino", modifier le numéro du pin pour faire correspondre cette valeur avec le numéro de pin utilisé sur la carte. \\
+Pour interrompre le programme temporairement il faut utiliser le bloc "[pcDuino] sleep 0" et indiquer au robot combien de temps il interrompt son execution en secondes.\\
+
+
+
+Pour l'Arduino :
+Pour initialiser une séquence de blocs pour l'Arduino, il faut utiliser le bloc "[Romeo] Initialiser connexion"\\
+Pour terminer la séquence de blocs pour le Romeo, il faut utiliser le bloc "[Romeo] Fermer connexion"\\
+Entre ces deux blocs, deux encoches "chevron" sont présentes donc on doit utiliser des blocs avec encoches "chevron".\\
+Pour allumer les leds il faut utiliser le bloc "allumer LED Romeo", trois encoches "puzzle" sont disponibles pour chaque couleur primaire : le rouge, le vert et le bleu. Mettre un bloc avec l'encoche "puzzle" "[Romeo] pin x valeur y" sur l'une des encoches du bloc "allumer LED PcDuino", modifier le numéro du pin pour faire correspondre cette valeur avec le numéro de pin utilisé sur la carte.\\
+Deux méthodes pour faire bouger le robot :\\
+ - en utilisant les blocs [Romeo] Avancer, [Romeo] Reculer, [Romeo] Arrêter roues, [Romeo] Tourner à gauche, [Romeo] Tourner à droite\\
+ - en utilisant le bloc "allumer moteur", comme pour allumer les leds il faut indiquer quelle roue sur quel pin on utilise et à quelle puissance.\\
+Pour temporiser il faut utiliser le bloc "[Romeo] delay x" et indiquer au robot combien de temps il interrompt son exécution en millisecondes.\\
+
+
+Dans l'onglet Loops on retrouve les deux derniers blocs, chancun ayant sa carte et langage cible : "[pcDuino] repeat" et "[Romeo] repeat". Idéal pour relancer x fois une séquence de blocs, il faut dire au robot combien de fois il exécutera le code.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.3]{./images/exemplePcDuino.png}~\\[1.5cm]
+\caption{Exemple de programmes correctes}
+\end{figure}
+
+
 
 \end{document}
