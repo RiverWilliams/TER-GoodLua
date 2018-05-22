@@ -72,7 +72,7 @@ Le système logiciel sur le robot permettra de recevoir et d'exécuter les progr
 
 \paragraph*{Quelles sont les possibilités de Blockly ?\\}
 
-Blockly a principalement deux utilités. La première est l'apprentissage de la programmation via un moyen visuel, et la seconde est le développement de programmes embarqués, notamment en robotique.
+Blockly est une bibliothèque visuelle utilisant des blocs (semblable à Scratch) qui a principalement deux utilités. La première est l'apprentissage de la programmation via un moyen visuel, et la deuxième est le développement de programmes embarqués, notamment en robotique.
 	
 La simplicité d'utilisation de Blockly en fait un outil d'apprentissage très pratique, et ce dès le plus jeune âge. En effet, il suffit de choisir puis glisser des blocs, afin de les imbriquer, comme des pièces de puzzle. Plusieurs sites, jeux et applications proposent des moyens ludiques basés sur Blockly pour apprendre à programmer. Le site le plus connu est celui proposant la série des 'Blockly Games' \cite{ref12}. Existant dans un très grand nombre de langues, il contient plusieurs jeux, de 10 niveaux chacun, avec une augmentation progressive de la difficulté de niveau en niveau et de jeu en jeu afin de découvrir le développement. Le premier de ces jeux est un simple puzzle sur les animaux, afin de découvrir le fonctionnement de Blockly. Le second jeu est un labyrinthe qui utilise des conditionnelles et des boucles. Le jeu suivant, qui permet de diriger les déplacements d'un oiseau, rentre plus sérieusement dans les 2 thèmes du jeu précédent. Suit un jeu qui fait découvrir le dessin via la programmation, puis un autre qui permet de créer des animations évoluant selon le temps. Enfin, on est amené à coder un petit jeu de tir, tout d'abord avec des blocs, puis en JavaScript à partir de ces blocs. Il existe plusieurs autres séries de jeux basés sur Blockly, on peut notament citer 'Rapid Router' \cite{ref13} qui en 100 niveaux initie les enfants au Python. Ces jeux, généralement accessibles à partir de 8 ans, sont une solution ludique, permise par Blockly pour initier les plus jeunes à la programmation.
 
@@ -87,7 +87,7 @@ De nos jours de nombreux langages sont développés dans le but de pouvoir ensei
 
 La première regroupe des langages disposant de syntaxes simples ce qui permet une utilisation simple due au fait que l'on traduit d'une manière naturelle ce que l'on attend de notre programme en un code. De plus ces langages sont également utilisés pour développer de réels projets, ce qui permet d'apprendre avec un langage simple mais qui peut être utilisé dans le domaine professionnel. Des exemples pour ces types de langage sont : Python, Ruby.
 
-Le deuxième groupe rassemble des langages visant plus à apprendre le concept de comment programmer plutôt que de réellement apprendre un langage de développement. Pour cela il se base sur une interface graphique simple d'utilisation, le plus généralement les fonctions, actions et événements ont la forme de bloc  que l'utilisateur combinent les un avec les autres en les faisant glisser. Cette catégorie comprend des langages telle que 'Scratch' \cite{ref17}, qui est actuellement utilisé dans les écoles et collèges, 'Alice' \cite{ref19} et 'LEGO Mindstorm Robotics' \cite{ref18}. Ce dernier est d'ailleurs utilisé dans le but d'enseigner le développement pour la robotique car il  permet de programmer des robot tout en restant simple d'utilisation.
+Le deuxième groupe rassemble des langages visant plus à apprendre le concept des méthodes de programmation plutôt que de réellement apprendre un langage de développement. Pour cela il se base sur une interface graphique simple d'utilisation, le plus généralement les fonctions, actions et événements ont la forme de bloc  que l'utilisateur combinent les un avec les autres en les faisant glisser. Cette catégorie comprend des langages telle que 'Scratch' \cite{ref17}, qui est actuellement utilisé dans les écoles et collèges, 'Alice' \cite{ref19} et 'LEGO Mindstorm Robotics' \cite{ref18}. Ce dernier est d'ailleurs utilisé dans le but d'enseigner le développement pour la robotique car il  permet de programmer des robot tout en restant simple d'utilisation.
 
 \textit{"Most jobs in the future will most likely have some sort of connection to coding"}  Navdeep Bains, Ministre canadien de l'innovation,des science et du dévelopement econimique.
 
@@ -115,9 +115,9 @@ Une application est disponible sur iOS et android pour contrôler le robot à di
 
 \paragraph*{Quelles sont les possibilités de l'embarqué ?\\}
 
-La programmation embarquée est un vaste domaine, allant des systèmes embarqués de voitures à tous les objets connectés de la maison, et est décomposable en de nombreux sous-domaines. Nous allons ici plus particulièrement nous intéresser aux possibilités offertes par l'arduino en matière d'embarqué.
+La programmation embarquée est un vaste domaine, allant des systèmes embarqués de voitures à tous les objets connectés de la maison, et elle est décomposable en de nombreux sous-domaines. Nous allons ici plus particulièrement nous intéresser aux possibilités offertes par l'arduino en matière d'embarqué.
 
-La domotique est l'un des champs d'utilisation d'un arduino \cite{ref20}. Grâce à leur petite taille, beaucoup d'objets domestiques sont contrôlés par des arduinos. Prenons par exemples quelques objets que l'on peut utiliser dans son jardin, et qu'il est possible de créer soi-même, ou qui existent dans le commerce, et qui utilisent un arduino \cite{ref21}: 
+La domotique est l'un des champs d'utilisation d'un arduino \cite{ref20}. Grâce à leur petite taille, beaucoup d'objets domestiques sont contrôlés par des arduinos. Prenons par exemple quelques objets que l'on peut utiliser dans son jardin, et qu'il est possible de créer soi-même, ou qui existent dans le commerce, et qui utilisent un arduino \cite{ref21}: 
 
 - un verrou électrique à code, pour sécuriser un portail, contrôlé par un arduino, et composé d'un verrou, d'un clavier et d'un afficheur LED, auquel on peut aussi ajouter un lecteur de badges RDID (identification par radiofréquence).
 
@@ -137,7 +137,7 @@ Les champs des utilisations d'arduino étant très vaste, l'imagination de sa co
 \addcontentsline{toc}{section}{Analyse de l'existant}
 
 Nous avons reçu pour ce projet, un kit matériel qui forme le robot.\\
-Pour nous aider à découvrir son utilisation, nous avons étudié le projet d'algorithmique répartie des étudiants de la promotion 2015 des master 1 informatique \cite{ref1} dans lequel ils manipulent un robot semblable au notre, mais avec des des langages différent du notre (Lua) puisqu'ils l'ont contrôlé avec du Python et du C++.
+Pour nous aider à découvrir son utilisation, nous avons étudié le projet d'algorithmique répartie des étudiants de la promotion 2015 des master 1 informatique \cite{ref1} dans lequel ils manipulent un robot semblable au notre, mais avec des langages différents du notre (Lua) puisqu'ils l'ont contrôlé avec du Python et du C++.
 
 \begin{figure}[!h]
 \includegraphics[scale=0.4]{./images/notre_materiel.jpg}~\
@@ -149,7 +149,7 @@ Voici la liste du matériel dont nous disposons et dont nous devrons nous servir
 \begin{description}
 \item [Le pcDuino :] La carte pcDuino V3 est un mini PC possédant un processeur dual core A20. Une fois branchée à un écran, un clavier et une souris, grâce à son port USB, elle s'utilise de la même manière qu'un PC sous une distribution Ubuntu. Elle possède un lecteur de carte micro-sd,  c'est dans cette carte que se situe le système d'exploitation du pcDuino. Le pcDuino possède également un port ethernet ainsi qu'une carte wifi, ce qui permet de se connecter à un réseau facilement. Pour le faire fonctionner, il suffit de le brancher à un chargeur USB par son port micro USB. Il possède enfin des broches arduino, en plus de ses interfaces de communication, permettant de faire de la programmation arduino.\cite{ref3}
 \item [L'arduino :] L'arduino Romeo V2.2 (R3) \cite{ref4} est un micro-contrôleur tout-en-un spécialement créé pour la robotique, qui fournit des interfaces de puissance pour contrôler des moteurs.
-\item [La plateforme mobile :] Notre robot est composé d'une châssis Baron - 4WD auquel sont associés 4 moteurs reliés à 4 roues codeuses. \cite{ref5}
+\item [La plateforme mobile :] Notre robot est composé d'un châssis Baron - 4WD auquel sont associés 4 moteurs reliés à 4 roues codeuses. \cite{ref5}
 \item [La LED :] Le disque contient 7 LEDs RGB \cite{ref6}, que l'ont peut allumer grâce à 3 pins, un pour chaque couleur, ainsi qu'avec un pin d'alimentation.
 \item [Les capteurs infrarouges :] Les 3 capteurs possèdent une LED qui s'allume si un objet est dans le champ de détection. Ils ont une sortie binaire, selon si un obstacle est détecté ou non. Leur distance de détection peut être de 3 à 80 cm, et se règle manuellement avant l'utilisation. \cite{ref7}
 \item [Le capteur ultrasons :] Lié à l'arduino, il détecte des températures allant de -10 à environ 70 degrés celsius, à une distance de 4cm, jusqu'à 5m. \cite{ref8}
@@ -172,9 +172,9 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 \begin{itemize}[label=\textbullet]
 	\item \textbf{Exécuter du code}
 	\begin{description}
-		\item \textit{description :} exécuter du code eLua sur le PcDuino
+		\item \textit{description :} exécuter du code Lua sur le PcDuino
 		\item \textit{priorité :} très haute
-		\item \textit{justification :} cette fonctionnalité est la principale. Nous devons être en mesure de faire fonctionner le robot grâce à du code eLua avant toute autre chose.
+		\item \textit{justification :} cette fonctionnalité est la principale. Nous devons être en mesure de faire fonctionner le robot grâce à du code Lua avant toute autre chose.
 		\item \textit{test prévu :} test d'exécution simple, l'équivalent du "Hello world" sur pcDuino, c'est à dire l'allumage d'une LED via du code Lua.
 	\end{description}
 	\item \textbf{Connecter android au robot grâce au bluetooth}
@@ -212,9 +212,9 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 
 \begin{description}
 	\item [Environnement de travail :]Nous travaillons sous une distribution Ubuntu. Pour la partie programmation en Lua\cite{refLua} il est possible d'utiliser n'importe quel éditeur de texte, puis de compiler le fichier. Pour la programmation en langage Arduino, nous pouvons utiliser l'Arduino IDE ou compiler et exécuter en lignes de commandes.
-	\item [Rapidité d'exécution :] Il serait préférable que l'exécution d'un programme se fasse de manière assez rapide, pour ne pas aller contre les attentes de l'utilisateur. Par exemple, si le programme utilise des capteurs, mais qu'une lenteur dans le programme fait qu'un obstacle n'est pas détecté à temps, cela nuira à l'expérience de l'utilisateur. De même, l'un des buts de l'application, est de pouvoir exécuter une séquence, ou de donner des ordres au robot en temps réel. 
+	\item [Rapidité d'exécution :] Il serait préférable que l'exécution d'un programme se fasse rapidement, pour ne pas aller contre les attentes de l'utilisateur. Par exemple, si le programme utilise des capteurs, mais qu'une lenteur dans le programme fait qu'un obstacle n'est pas détecté à temps, cela nuira à l'expérience de l'utilisateur. De même, l'un des buts de l'application, est de pouvoir exécuter une séquence, ou de donner des ordres au robot en temps réel. 
 	\item [Simplicité d'utilisation : ]L'application doit être utilisable par des utilisateurs sachant programmer, qui pourront créer un programme complexe à partir des blocs basiques, mais elle doit également être accessible à des utilisateurs débutants en programmation, qui pourront utiliser des blocs représentant des fonctions toutes faites concernant le robot (par exemple : allumer LED). Les blocs et l'interface devront donc être instinctifs et simples d'utilisation.
-	\item [Empreinte mémoire :] Le poids de l'application Androïd doit être le plus petit possible car la tablette possède une mémoire limitée.
+	\item [Empreinte mémoire :] Le poids de l'application Androïd doit être le plus faible possible car la tablette possède une mémoire limitée.
 	\item [Empreinte énergétique :] L'application ne doit pas surconsommer la batterie de la tablette, pour cela nous allons contrôler l'utilisation des ressources.
 \end{description}
 
@@ -222,7 +222,7 @@ Grâce à cette bibliothèque, nous avons la possibilité de créer les blocs de
 \addcontentsline{toc}{section}{Prototype - l'interface de l'application Androïd}
 En ouvrant l'application, l'utilisateur se verra proposer de créer un nouveau programme, il devra alors lui donner un nom. Une fois le programme créé, il aura le choix de le modifier ou de l'exécuter. [Figure 1]
 
-Dans le cas du choix de modifier le code, on ouvrira l'éditeur visuel contenant Blockly avec l'ensemble des blocs disponibles dans une barre latérale gauche. Un menu permettra également de sauvegarder le programme en cours d'édition, de charger le dernier programme enregistré ou de l'effacer. [Figure \ref{figMaquette}]\\
+Dans le cas où l'utilisateur choisi de modifier le code, on ouvrira l'éditeur visuel contenant Blockly avec l'ensemble des blocs disponibles dans une barre latérale gauche. Un menu permettra également de sauvegarder le programme en cours d'édition, de charger le dernier programme enregistré ou de l'effacer. [Figure \ref{figMaquette}]\\
 
 \begin{figure}[!h]
 \begin{addmargin}[-7em]{0em}
@@ -263,7 +263,7 @@ Voici donc deux exemples de programmes Blockly pour chacune des cartes du robot 
 
 \bigskip
 
-Le premier programme concerne le pcDuino. Chaque programme doit être encadré par les blocs d'initialisation et de fermeture, afin que le code généré soit bien structuré. On voit ensuite 3 blocs identiques, qui mettent le sens des pins 1, 2 et 3 à 1. Ces 3 blocs permettent de dire au pcDuino que les pins concernés seront en mode écriture (contrairement au mode lecture, qui peut être utilisé avec des capteurs par exemple). On rentre ensuite dans une boucle qui sera exécutée 3 fois. Dans cette boucle, on allume un par un les pins 1, 2 et 3, qui correspondent dans cet exemple à une LED RGB, ou chaque couleur correspond à un pin. On en allume donc un par seconde, puis on les éteint tous grâce à un bloc qui regroupe les pins de la LED. Et enfin on ferme le programme.
+Le premier programme concerne le pcDuino. Chaque programme doit être encadré par les blocs d'initialisation et de fermeture, afin que le code généré soit bien structuré. On voit ensuite 3 blocs identiques, qui mettent le sens des pins 1, 2 et 3 à 1. Ces 3 blocs permettent de dire au pcDuino que les pins concernés seront en mode écriture (contrairement au mode lecture, qui peut être utilisé avec des capteurs par exemple). On rentre ensuite dans une boucle qui sera exécutée 3 fois. Dans cette boucle, on allume un par un les pins 1, 2 et 3, qui correspondent dans cet exemple à une LED RGB, où chaque couleur correspond à un pin. On en allume donc un par seconde, puis on les éteint tous grâce à un bloc qui regroupe les pins de la LED. Et enfin on ferme le programme.
 
 \begin{figure}[!h]
 \begin{addmargin}[-5.5em]{1em}
@@ -337,7 +337,7 @@ Lors de ce projet nous avons rencontré un certain nombre de problèmes qui ont 
 
 Les langages utilisés, Lua et Arduino ont été choisis car ils permettent respectivement d'utiliser les GPIO du pcDuino, et ceux du micro-contrôleur Romeo, en y accédant assez aisément via quelques lignes de code.
 
-Chaque bloc a sa spécificité et est nécessaire à la création de n'importe quel programme Blockly.
+Chaque bloc a sa spécificité et il est nécessaire à la création de n'importe quel programme Blockly.
 
 \bigskip
 Nous allons donc nous intéresser plus particulièrement à la justification des algorithmes composant le code de l'application Androïd.
@@ -392,7 +392,7 @@ Une amélioration possible de notre application sera de repenser totalement la f
 Actuellement, les blocs de la toolbox sont ceux que nous avons définis en correspondance avec les divers capteurs et actionneurs du robot. Si le robot évolue, il serait intéressant de pouvoir supprimer ou ajouter de nouveaux blocs. 
 
 Pour ajouter un nouveau bloc, il faut trois éléments :
-un fichier block.json décrivant le blocs (couleur, forme, ce qu'il reçoit, etc)
+un fichier block.json décrivant le bloc (couleur, forme, ce qu'il reçoit, etc)
 un fichier block.js contenant le code généré par le bloc
 un fichier toolbox.xml contenant les catégories auxquelles le bloc appartient.
 
