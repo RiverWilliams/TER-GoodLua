@@ -22,11 +22,13 @@ Blockly.Lua['pin'] = function(block) {
 };
 
 Blockly.Lua['allumer_moteur'] = function(block) {
- var value_numroue = block.getFieldValue('numRoue');
-  var value_puissanceroue = block.getFieldValue('puissanceRoue');
-  var code = 'if ' + value_numroue.length + ' != 0 && ' + value_puissanceroue.length + ' != 0 \n';
-  code += 'digitalWrite(' + value_numroue + ',LOW);\n';
+  var number_numroue = block.getFieldValue('numRoue');
+  var number_numpuissance = block.getFieldValue('numPuissance');
+  var number_puissanceroue = block.getFieldValue('puissanceRoue');
+  var code = 'if ' + number_numroue.length + ' != 0 && ' + number_numpuissance + ' != 0 \n';
   code += 'pinMode(' + value_numroue + ', OUTPUT);\n';
+  code += 'digitalWrite(' + value_numroue + ',LOW);\n';
+  code += 'analogWrite(' + number_numpuissance + ',' + number_puissanceroue +');\n';
   code += 'analogWrite(' + value_numroue + ', ' + value_puissanceroue + ');\n';
   return code;
 };
@@ -140,7 +142,13 @@ Blockly.Lua['initialiser2'] = function(block) {
   code += 'int E2 = 6;\n';     
   code += 'int M1 = 4;\n';    
   code += 'int M2 = 7;\n';
+  code += 'int IRD_PINL = 10;\n';
+  code += 'int IRD_PINC = 11;\n';
+  code += 'int IRD_PINR = 12;\n';
   code += 'void setup(void) {\n';
+  code += 'pinMode(IRD_PINL, INPUT);\n';
+  code += 'pinMode(IRD_PINC, INPUT);\n';
+  code += 'pinMode(IRD_PINR, INPUT);\n';
   code += 'for(int i=4;i<=7;i++){\n';
   code += 'pinMode(i, OUTPUT);\n';
   code += '}\n';
@@ -163,7 +171,7 @@ Blockly.Lua['stoproues'] = function(block) {
 };
 
 Blockly.Lua['gauche'] = function(block) {
-  var code = 'analogWrite (E1,50);\n';
+  var code = 'analogWrite (E1,-50);\n';
   code += 'digitalWrite(M1,LOW);\n';
   code += 'analogWrite (E2,200);\n';
   code += 'digitalWrite(M2,LOW);\n';
@@ -173,7 +181,19 @@ Blockly.Lua['gauche'] = function(block) {
 Blockly.Lua['droite'] = function(block) {
   var code = 'analogWrite (E1,200);\n';
   code += 'digitalWrite(M1,LOW);\n';
-  code +='analogWrite (E2,50);\n';
+  code +='analogWrite (E2,-50);\n';
   code +='digitalWrite(M2,LOW);\n';
+  return code;
+};
+
+Blockly.Lua['capteur'] = function(block) {
+  var statements_sicapteur = Blockly.Lua.statementToCode(block, 'siCapteur');
+  var statements_sinoncapteur = Blockly.Lua.statementToCode(block, 'sinonCapteur');
+  var code = 'if ((digitalRead(IRD_PINL) == HIGH) || (digitalRead(IRD_PINC) == HIGH) || (digitalRead(IRD_PINR) == HIGH){\n';
+  code += siCapteur '\n';
+  code += '}\n';
+  code += 'else {\n';
+  code += sinonCapteur + '\n';
+  code += '}\n';
   return code;
 };
